@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url("../fonts/UntitledSansWeb-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Untitled Sans Italic";
+  src: url("../fonts/UntitledSansWeb-RegularItalic.woff2");
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background-color: #d2d2d2;
+  font-family: Untitled Sans, helvetica, arial, sans-serif;
+  font-size: 19px;
+  line-height: 1.3em;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  font-kerning: normal;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:active {
+  color: red;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 0.65em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.65em;
+}
+
+em {
+  font-style: normal !important;
+  font-family: "Untitled Sans Italic";
+}
+
+::selection {
+  background: white;
+}
+
+::-moz-selection {
+  background: blue;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrapper {
+  max-width: 1800px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+#history li {
+  margin-left: 0.8em;
+  text-indent: -0.8em;
+}
+
+#history li:before {
+  content: "– "
+}
+
+.history_year {
+  display: block;
+  margin-top: 0.65em;
+}
+
+span.column_title {
+  display: block;
+  margin-bottom: 0.65em;
+}
+
+span.project_name {
+  display: block;
+  margin-bottom: 0.65em;
+}
+
+.project {
+  margin-bottom: 1.3em;
+}
+
+@media (max-width: 599px) {
+  .no_mobile {
+    display: none !important;
+  }
+  .column {
+    width: 100%;
+    padding-right: 10px;
+    float: left;
+  }
+  #computational_forms .column {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  .column {
+    float: left;
+    padding-right: 20px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .column {
+    width: 25%;
+    padding-right: 20px;
+    float: left;
+  }
+}
+
+@media (min-width: 1800px) {
+  #wrapper {
+    margin: 0 auto;
+  }
+}

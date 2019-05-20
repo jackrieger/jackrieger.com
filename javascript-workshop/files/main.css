@@ -1,0 +1,63 @@
+p {
+  max-width: 400px;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 0;
+  outline: none;
+  background: none;
+  border: none;
+  color: gray;
+  font: inherit;
+}
+
+button:hover,
+#menu_button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+#menu {
+  width: 120px;
+  padding-top: 2px;
+  padding-bottom: 20px;
+  border: solid 1px black;
+  color: gray;
+  text-align: center;
+}
+
+#menu_button:hover {
+  cursor: pointer;
+}
+
+#menu_list {
+  display: none;
+}
+
+#menu_list.active {
+  display: block;
+}
+
+.rect, 
+.circ {
+  width: 90px;
+  height: 90px;
+  float: left;
+}
+
+.rect {
+  background: red;
+}
+
+.circ {
+  border-radius: 50%;
+  background: blue;
+}

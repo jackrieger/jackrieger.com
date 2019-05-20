@@ -1,0 +1,185 @@
+JavaScript & the DOM
+	adding, looking up, inserting, listening, removing
+
+- - -
+
+DOM API
+	The DOM tree is a family tree
+	https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+	methods
+		1. looking up existing elements
+			1. getElements
+				document.getElementsByClassName()
+				document.getElementsByTagName()
+				document.getElementById()
+			2. querySelector
+				document.querySelector()
+				document.querySelectorAll()
+		2. creating elements
+			document.createElement()
+				show how to append to something
+
+Element API
+	https://developer.mozilla.org/en-US/docs/Web/API/Element
+	properties
+		1. adding / removing classes
+			element.classList
+				add()
+				remove()
+				replace()
+		2. inserting HTML or text
+			element.innerHTML
+			element.innerText
+	methods
+		1. event listeners
+			eventTarget.addEventListener()
+			eventTarget.removeEventListener()
+		2. inserting / removing elements
+			element.insertAdjacentElement()
+			childNode.append()
+			childNode.remove()
+
+Miscellaneous
+	DOMTokenList
+	NodeList
+	Template Literals
+
+- - -
+
+Definitions
+	APIs
+		API is a bunch of functions / properties that are made available to you by someone else
+	events, event-driven
+		smalltalk?
+		hypercard
+		events are interactions; keyboard, mouse, trackpad, touch, click
+		events can be time-related: setInterval
+		events can be progress-related
+			if user scrolls past x, do this
+			is this actually an event?
+	subset
+		"most of the new features are crap" --- Crockford
+	website
+		a collection of folders and documents
+
+You Might Not Need JavaScript
+	doing a small informational site without dynamic content, interactions, or extras? just use HTML & CSS
+
+Style
+	we indent
+	we use semicolons
+		the real rules for semicolons are too complex to memorize
+	we name variables usefully
+	we write comments
+	…
+
+- - -
+
+Things you might want to build with JavaScript
+	interactive menus / modals / dropdowns
+		example: Het Nieuwe Instituut menu
+			event handler
+			add / remove class
+	interact with one thing, change multiple things
+		example: Klim Type foundry fonts page
+			event handler
+			add / remove class
+	change scroll position
+		example: Het Nieuwe Instituut scroll down button
+			event handler
+			scrollTo();
+	change something after a set amount of time
+		example: Jung-Lee Type Foundry
+			setInterval();
+			array of content
+			template literal
+		example: screensaver
+			listen for mouse movement
+			setTimeout
+			setInterval
+			calculate random position
+			appendChild
+			* alternate way *
+			add / remove class of elements already on page
+				problem with z-index
+
+This is the foundation of usability on websites. If you want to experiment and develop new concepts, you will have to learn more JavaScript. I recommend these references:
+
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript
+* Eloquent JavaScript
+* JavaScript: The Good Parts
+* p5.js videos on the Coding Train
+
+- - -
+
+All properties / methods mentioned
+
+document.getElementsByClassName()
+document.getElementsByTagName()
+document.getElementById()
+
+document.querySelector()
+document.querySelectorAll()
+
+document.createElement()
+
+element.classList
+	add()
+	remove()
+	replace()
+
+element.innerHTML
+element.innerText
+
+eventTarget.addEventListener()
+eventTarget.removeEventListener()
+
+element.insertAdjacentElement()
+childNode.append()
+childNode.remove()
+
+- - -
+
+Simplified; most important
+
+document.querySelector
+element.classList
+element.innerHTML
+eventTarget.addEventListener
+
+- - -
+
+Typical designer things
+	add a class for a bunch of elements
+		loop
+			if you’re copying and pasting a lot, consider a loop
+	toggling
+	mouse position / scroll position
+		element.scrollBy()
+		element.scrollTo()
+	random
+
+Data types discussion
+
+Arrays, functions, conditionals, loops
+	?
+
+- - -
+	
+Things I'm ignoring that you should look up later (or workshop #2 ?)
+	HTML Entities
+		&amp;
+			will throw error if '&'
+		&endash;
+			choice between hard coded on keyboard + entity
+	ES6
+		`let` and `const`
+		template literals
+		strict mode
+	CSS
+		reset
+		default values
+	file paths
+	text editor shortcuts / making things easier
+	web inspector
+	p5.js

@@ -1,0 +1,78 @@
+html {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 20px;
+  padding: 20px;
+}
+
+body {
+  letter-spacing: 0.03em;
+  line-height: 1.2em;
+  font-size: 1rem;
+  word-spacing: 0.02em;
+}
+
+body > div {
+  margin-bottom: 2rem;
+}
+
+img {
+  cursor: pointer;
+  display: block;
+  height: 80vh;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  max-height: 600px;
+  width: auto;
+}
+
+p:not(:first-of-type) {
+  text-indent: 2em;
+}
+
+p,
+span {
+  max-width: 26rem;
+  padding-left: 2rem;
+}
+
+a,
+a:visited {
+  border-bottom: 1px dashed #000000;
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: none;
+  color: #0000FF;
+  cursor: pointer;
+}
+
+a:active {
+  color: #FF0000;
+}
+
+#info span,
+.project_title {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.project_title {
+  font-style: italic;
+}
+
+@media (max-width: 599px) {
+  html {
+    font-size: 17px;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  p,
+  span {
+    max-width: 100%;
+    padding-left: unset;
+  }
+}
