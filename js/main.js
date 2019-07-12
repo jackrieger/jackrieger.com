@@ -4,17 +4,16 @@ const Site = {};
 
 Site.setNewTabLinks = function () {
   const links = document.querySelectorAll('a');
-  for (const link of links) {
-    if (link.classList.contains('no_tab') === true) {
-      return;
-    } else if (link.hasAttribute('download') === true) {
+
+  links.forEach(function (link) {
+    if (link.hasAttribute('data-disable-new-tab') === true) {
       return;
     } else {
       link.setAttribute('target', '_blank');
     }
-  }
+  });
 }
 
 Site.init = (function () {
   Site.setNewTabLinks();
-})();
+}());
