@@ -1,0 +1,23 @@
+#container,
+#title {
+  margin-bottom: 1rem;
+}
+
+#sort_display,
+.cell {
+  font-family: "Courier New", "Courier", monospace;
+}
+
+#title,
+.cell {
+  display: block;
+}
+
+.cell,
+.color_name {
+  width: auto;
+}
+
+.color_name {
+  display: inline-block;
+}
