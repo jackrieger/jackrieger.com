@@ -18,11 +18,11 @@
 body {
   background-color: #d2d2d2;
   font-family: Untitled Sans, helvetica, arial, sans-serif;
-  font-size: 19px;
-  line-height: 1.3em;
-  text-rendering: optimizeLegibility;
   font-feature-settings: "kern";
   font-kerning: normal;
+  font-size: 18px;
+  line-height: 1.3em;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -36,8 +36,8 @@ a:visited {
 
 a:hover {
   color: white;
-  text-decoration: underline;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 a:active {
@@ -50,14 +50,14 @@ p {
 }
 
 img {
-  width: 100%;
   height: auto;
   margin-bottom: 0.65em;
+  width: 100%;
 }
 
 em {
-  font-style: normal !important;
   font-family: "Untitled Sans Italic";
+  font-style: normal !important;
 }
 
 ::selection {
@@ -69,8 +69,8 @@ em {
 }
 
 .center {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
 }
 
@@ -104,27 +104,29 @@ span.project_name {
   margin-bottom: 0.65em;
 }
 
+.column {
+  float: left;
+}
+
 .project {
   margin-bottom: 1.3em;
 }
 
 @media (max-width: 599px) {
-  .no_mobile {
-    display: none !important;
-  }
-  .column {
-    width: 100%;
-    padding-right: 10px;
-    float: left;
+  html {
+    padding-bottom: 20px;
   }
   #computational_forms .column {
     margin-bottom: 0;
+  }
+  .column {
+    padding-right: 10px;
+    width: 100%;
   }
 }
 
 @media (min-width: 600px) {
   .column {
-    float: left;
     padding-right: 20px;
     width: 50%;
   }
@@ -133,8 +135,6 @@ span.project_name {
 @media (min-width: 900px) {
   .column {
     width: 25%;
-    padding-right: 20px;
-    float: left;
   }
 }
 
