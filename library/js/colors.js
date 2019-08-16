@@ -20,7 +20,12 @@ const colors = [
   '00ffff',
   'ffff00',
   '64ff64',
-  'f9f7f3'
+  'f9f7f3',
+  '018eff',
+  'bcf6bf',
+  'd6dbff',
+  '00ffd9',
+  '00ff6a'
 ];
 
 // Functionality
