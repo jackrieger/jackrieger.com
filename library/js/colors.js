@@ -27,7 +27,9 @@ const colors = [
   '00ffd9',
   '00ff6a',
   '6085ff',
-  '#e3eeda'
+  'e3eeda',
+  'bdd3ff',
+  '42b59e'
 ];
 
 // Functionality
