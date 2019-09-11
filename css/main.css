@@ -26,22 +26,22 @@ body {
 }
 
 a {
-  color: blue;
+  color: #0000ff;
   text-decoration: none;
 }
 
 a:visited {
-  color: blue;
+  color: #0000ff;
 }
 
 a:hover {
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   text-decoration: underline;
 }
 
 a:active {
-  color: red;
+  color: #ff0000;
   text-decoration: underline;
 }
 
@@ -61,11 +61,11 @@ em {
 }
 
 ::selection {
-  background: white;
+  background: #ffffff;
 }
 
 ::-moz-selection {
-  background: blue;
+  background: #0000ff;
 }
 
 .center {
@@ -89,17 +89,9 @@ em {
   content: "– "
 }
 
+span.column_title,
+span.project_name,
 .history_year {
-  display: block;
-  margin-top: 0.65em;
-}
-
-span.column_title {
-  display: block;
-  margin-bottom: 0.65em;
-}
-
-span.project_name {
   display: block;
   margin-bottom: 0.65em;
 }
