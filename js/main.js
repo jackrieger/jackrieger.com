@@ -17,7 +17,7 @@ Site.setModal = function () {
   function hide() {
     modal.classList.remove('show');
     modal.classList.add('hide');
-    button.innerText = 'Info';
+    button.innerHTML = 'About&hairsp;/&hairsp;Contact';
     state = false;
   }
 
