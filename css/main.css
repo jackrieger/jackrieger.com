@@ -1,3 +1,5 @@
+/* Base */
+
 @charset "UTF-8";
 
 @font-face {
@@ -60,9 +62,21 @@ em {
   font-style: normal !important;
 }
 
+/* Helper */
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/* Components */
+
 .info_bar {
-  height: 2rem;
-  padding-top: 0.25rem;
+  height: 2.5rem;
+  padding-top: 0.5rem;
   width: 100%;
 }
 
@@ -102,14 +116,6 @@ em {
   content: '—';
 }
 
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 .projects_container {
   padding-left: 1rem;
 }
@@ -130,7 +136,13 @@ em {
   margin-bottom: 0.5rem;
 }
 
+/* Breakpoints */
+
 @media (max-width: 600px) {
+  .info_bar div {
+    padding-left: 2rem;
+  }
+
   .info_modal div {
     width: 100%;
   }
