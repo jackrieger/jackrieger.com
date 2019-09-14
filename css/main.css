@@ -75,8 +75,10 @@ em {
 /* Components */
 
 .info_bar {
+  background-color: #d2d2d2;
   height: 2.5rem;
   padding-top: 0.5rem;
+  position: fixed;
   width: 100%;
 }
 
@@ -96,6 +98,7 @@ em {
 .info_modal {
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 2.5rem;
 }
 
 .info_modal div {
@@ -118,6 +121,7 @@ em {
 
 .projects_container {
   padding-left: 1rem;
+  padding-top: 2.5rem;
 }
 
 .project {
