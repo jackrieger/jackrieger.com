@@ -60,20 +60,57 @@ em {
   font-style: normal !important;
 }
 
-.info-bar {
+.info_bar {
   height: 2rem;
   padding-top: 0.25rem;
   width: 100%;
 }
 
-.info-bar span {
+.info_bar div {
   display: block;
   float: left;
-  padding-left: 2rem;
+  padding-left: 3rem;
   width: 50%;
 }
 
-.projects-container {
+.info_button:hover {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.info_modal {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.info_modal div {
+  margin-bottom: 1rem;
+  width: 50%;
+}
+
+.info_modal ul {
+  margin-bottom: 1rem;
+}
+
+.info_modal ul {
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.info_modal li:before {
+  content: '—';
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.projects_container {
   padding-left: 1rem;
 }
 
@@ -93,8 +130,12 @@ em {
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 480px) {
-  .projects-container {
+@media (max-width: 600px) {
+  .info_modal div {
+    width: 100%;
+  }
+
+  .projects_container {
     margin-right: 1rem;
   }
 
@@ -104,13 +145,21 @@ em {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 601px) {
+  .info_modal div {
+    width: 75%;
+  }
+
   .project {
     width: calc(50% - 1rem);
   }
 }
 
 @media (min-width: 1092px) {
+  .info_modal div {
+    width: 50%;
+  }
+
   .project {
     width: calc(25% - 1rem);
   }
