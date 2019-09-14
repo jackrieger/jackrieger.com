@@ -20,8 +20,8 @@ body {
   font-family: Untitled Sans, helvetica, arial, sans-serif;
   font-feature-settings: "kern";
   font-kerning: normal;
-  font-size: 17px;
-  line-height: 1.4em;
+  font-size: 18px;
+  line-height: 1.25;
   text-rendering: optimizeLegibility;
 }
 
@@ -46,12 +46,12 @@ a:active {
 }
 
 p {
-  margin-bottom: 0.65em;
+  margin-bottom: 0.5rem;
 }
 
 img {
+  float: left;
   height: auto;
-  margin-bottom: 0.65em;
   width: 100%;
 }
 
@@ -60,78 +60,58 @@ em {
   font-style: normal !important;
 }
 
-::selection {
-  background: #ffffff;
+.info-bar {
+  height: 2rem;
+  padding-top: 0.25rem;
+  width: 100%;
 }
 
-::-moz-selection {
-  background: #0000ff;
-}
-
-.center {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-#wrapper {
-  max-width: 1800px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-#history li {
-  margin-left: 0.8em;
-  text-indent: -0.8em;
-}
-
-#history li:before {
-  content: "– "
-}
-
-span.column_title,
-span.project_name,
-.history_year {
+.info-bar span {
   display: block;
-  margin-bottom: 0.65em;
+  float: left;
+  padding-left: 2rem;
+  width: 50%;
 }
 
-.column {
-  float: left;
+.projects-container {
+  padding-left: 1rem;
 }
 
 .project {
-  margin-bottom: 1.3em;
+  float: left;
+  margin-bottom: 1rem;
+  /* gutter */
+  margin-right: 1rem;
 }
 
-@media (max-width: 599px) {
-  html {
-    padding-bottom: 20px;
+.project img {
+  margin-bottom: 1rem;
+}
+
+.project_name {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    margin-right: 1rem;
   }
-  #computational_forms .column {
-    margin-bottom: 0;
-  }
-  .column {
-    padding-right: 10px;
+
+  .project {
+    /* gutter */
     width: 100%;
   }
 }
 
-@media (min-width: 600px) {
-  .column {
-    padding-right: 20px;
-    width: 50%;
+@media (min-width: 768px) {
+  .project {
+    width: calc(50% - 1rem);
   }
 }
 
-@media (min-width: 900px) {
-  .column {
-    width: 25%;
-  }
-}
-
-@media (min-width: 1800px) {
-  #wrapper {
-    margin: 0 auto;
+@media (min-width: 1092px) {
+  .project {
+    width: calc(25% - 1rem);
   }
 }
