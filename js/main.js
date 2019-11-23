@@ -6,18 +6,30 @@ Site.setModal = function () {
   const modal = document.querySelector('.info_modal');
   const button = document.querySelector('.info_button');
   const project_container = document.querySelector('.project_container');
+
   let is_modal_active = false;
+  let previous_scroll_position;
 
   function toggleModal() {
-    [modal, project_container].forEach(function (el) {
-      el.classList.toggle('hide');
-    });
+    function toggle() {
+      [modal, project_container].forEach(function (el) {
+        el.classList.toggle('hide');
+      });
+    }
 
     if (is_modal_active === false) {
+      previous_scroll_position = document.documentElement.scrollTop;
+
+      toggle();
+      window.scrollTo(0, 0);
+
       button.innerHTML = 'Close';
       is_modal_active = true;
     } 
     else {
+      toggle();
+      window.scrollTo(0, previous_scroll_position);
+
       button.innerHTML = 'About&hairsp;/&hairsp;Contact';
       is_modal_active = false;
     }
