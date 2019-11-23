@@ -151,6 +151,10 @@ p {
 /* Mobile and below */
 
 @media (max-width: 600px) {
+  .hide_mobile {
+    display: none !important;
+  }
+
   .info_bar div {
     padding-left: 2rem;
   }
