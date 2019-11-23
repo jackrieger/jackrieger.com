@@ -55,6 +55,6 @@ function create() {
   const result = expand(start, expansion);
   const p = document.createElement('p');
   p.innerText = result;
-  const wrapper = document.querySelector('#wrapper');
-  wrapper.insertAdjacentElement('afterbegin', p)
+  const container = document.querySelector('#container');
+  container.insertAdjacentElement('afterbegin', p)
 }

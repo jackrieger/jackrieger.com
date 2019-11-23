@@ -5,40 +5,26 @@ const Site = {};
 Site.setModal = function () {
   const modal = document.querySelector('.info_modal');
   const button = document.querySelector('.info_button');
-  const projects = document.querySelector('.projects_container');
-  let state = false;
-
-  function show(el) {
-    el.classList.remove('hide');
-    el.classList.add('show');
-  }
-
-  function hide(el) {
-    el.classList.remove('show');
-    el.classList.add('hide');
-  }
-
-  function scrollToTop() {
-    window.scrollTo(0, 0);
-  }
+  const project_container = document.querySelector('.project_container');
+  let is_modal_active = false;
 
   function toggleModal() {
-    if (state === false) {
-      show(modal);
-      hide(projects);
-      scrollToTop();
+    [modal, project_container].forEach(function (el) {
+      el.classList.toggle('hide');
+    });
+
+    if (is_modal_active === false) {
       button.innerHTML = 'Close';
-      state = true;
-    } else {
-      show(projects);
-      hide(modal);
+      is_modal_active = true;
+    } 
+    else {
       button.innerHTML = 'About&hairsp;/&hairsp;Contact';
-      state = false;
+      is_modal_active = false;
     }
   }
 
   button.addEventListener('click', toggleModal);
-}
+};
 
 Site.setNewTabLinks = function () {
   const links = document.querySelectorAll('a');
@@ -46,11 +32,12 @@ Site.setNewTabLinks = function () {
   links.forEach(function (link) {
     if (link.hasAttribute('data-disable-new-tab') === true) {
       return;
-    } else {
+    } 
+    else {
       link.setAttribute('target', '_blank');
     }
   });
-}
+};
 
 Site.init = (function () {
   Site.setModal();
