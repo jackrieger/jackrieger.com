@@ -96,14 +96,12 @@ p {
   margin-bottom: 1rem;
 }
 
-.info-modal__history__item {
-  text-indent: -0.65rem;
-}
-
 .info-modal__history__item:before {
   content: '– ';
+  margin-left: -0.65rem;
 }
 
+.info-modal__history__item,
 .info-modal__history__description {
   display: block;
   padding-left: 0.65rem;
