@@ -3,9 +3,9 @@
 const Site = {};
 
 Site.setModal = function () {
-  const modal = document.querySelector('.info_modal');
-  const button = document.querySelector('.info_button');
-  const project_container = document.querySelector('.project_container');
+  const modal = document.querySelector('.info-modal');
+  const button = document.querySelector('.info-button');
+  const project_container = document.querySelector('.project-container');
 
   let is_modal_active = false;
   let previous_scroll_position;
