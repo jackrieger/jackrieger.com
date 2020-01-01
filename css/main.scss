@@ -106,6 +106,8 @@ p {
 }
 
 .info-modal__history {
+  max-width: 360px;
+
   ul {
     list-style-position: inside;
     list-style-type: none;
@@ -170,6 +172,10 @@ p {
     width: 100%;
   }
 
+  .info-modal__history {
+    max-width: 100%;
+  }
+
   .project-container {
     grid-template-columns: 1fr;
   }
@@ -186,10 +192,6 @@ p {
 
   .info-modal {
     width: 33em;
-  }
-
-  .info-modal__history {
-    width: 26em;
   }
 
   .project-container {
