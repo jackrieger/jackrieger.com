@@ -99,20 +99,26 @@ p {
   padding-left: $space_small;
   padding-right: $space_small;
   padding-top: $space_large;
+}
 
-  div {
-    margin-bottom: $full_line_break;
-  }
+.info-modal__bio {
+  margin-bottom: $space_medium;
+}
+
+.info-modal__contact {
+  margin-bottom: $space_medium;
 }
 
 .info-modal__history {
-  max-width: 360px;
-
   ul {
     list-style-position: inside;
     list-style-type: none;
     margin-bottom: $full_line_break;
   }
+}
+
+.info-modal__history-header {
+  margin-bottom: $space_small;
 }
 
 .info-modal__history__item,
