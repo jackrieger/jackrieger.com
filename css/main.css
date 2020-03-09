@@ -133,6 +133,13 @@ p {
     text-align: right;
   }
 
+  .info-bar--computational-forms div:nth-of-type(1) {
+    width: 75%;
+  }
+  .info-bar--computational-forms div:nth-of-type(2) {
+    width: 25%;
+  }
+
   .info-modal {
     width: 100%;
   }
