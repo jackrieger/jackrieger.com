@@ -2,14 +2,14 @@
 
 // Variables
 
-$space_tiny:    10px;
-$space_small:   20px;
-$space_medium:  32px;
-$space_large:   48px;
-$space_huge:    64px;
+$space_tiny: 10px;
+$space_small: 20px;
+$space_medium: 32px;
+$space_large: 48px;
+$space_huge: 64px;
 
-$blue:  #0000ff;
-$gray:  #d2d2d2;
+$blue: #0000ff;
+$gray: #eeeeee;
 $green: #00ff00;
 $white: #ffffff;
 
@@ -26,7 +26,7 @@ $full_line_break: 1.1em;
 body {
   background-color: $gray;
   font-family: system-ui, helvetica, arial, sans-serif;
-  font-feature-settings: "kern";
+  font-feature-settings: 'kern';
   font-kerning: normal;
   font-size: 17px;
   letter-spacing: 0.03em;
@@ -167,7 +167,7 @@ p {
   .hide-mobile {
     display: none !important;
   }
-  
+
   .info-bar {
     div:nth-of-type(2) {
       text-align: right;
