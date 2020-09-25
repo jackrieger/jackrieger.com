@@ -111,6 +111,10 @@ p {
     list-style-type: none;
     margin-bottom: $full_line_break;
   }
+
+  li {
+    margin-bottom: 3px;
+  }
 }
 
 .info-modal__history-header {
@@ -125,7 +129,7 @@ p {
 
 .info-modal__history__item {
   &:before {
-    content: '– ';
+    content: '• ';
     margin-left: -0.8em; // en dash length
   }
 }

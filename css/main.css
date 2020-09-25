@@ -68,6 +68,8 @@ p {
   list-style-position: inside;
   list-style-type: none;
   margin-bottom: 1.1em; }
+.info-modal__history li {
+  margin-bottom: 3px; }
 
 .info-modal__history-header {
   margin-bottom: 20px; }
@@ -78,7 +80,7 @@ p {
   padding-left: 0.8em; }
 
 .info-modal__history__item:before {
-  content: '– ';
+  content: '• ';
   margin-left: -0.8em; }
 
 .project-container {
