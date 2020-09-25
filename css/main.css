@@ -68,8 +68,11 @@ p {
   list-style-position: inside;
   list-style-type: none;
   margin-bottom: 1.1em; }
-.info-modal__history li {
+.info-modal__history li,
+.info-modal__history .info-modal__history-year {
   margin-bottom: 3px; }
+.info-modal__history .info-modal__history-year {
+  display: block; }
 
 .info-modal__history-header {
   margin-bottom: 20px; }
