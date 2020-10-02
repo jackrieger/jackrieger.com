@@ -1,5 +1,6 @@
 @charset "UTF-8";
 html {
+  background-color: #fafafa;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -30,7 +31,7 @@ a {
     color: #0000ff; }
 
 li:before {
-  content: '• '; }
+  content: "• "; }
 
 .info p:not(:last-of-type) {
   margin-bottom: 23px; }

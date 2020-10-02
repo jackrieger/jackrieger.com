@@ -9,6 +9,7 @@ $line_height_mobile: 24px;
 $line_length: 31em;
 
 $blue: #0000ff;
+$gray: #fafafa;
 
 @mixin font {
   font-family: system-ui, helvetica, arial, sans-serif;
@@ -23,6 +24,7 @@ $blue: #0000ff;
 }
 
 html {
+  background-color: $gray;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -57,7 +59,7 @@ a {
 }
 
 li:before {
-  content: '• ';
+  content: "• ";
 }
 
 .info p:not(:last-of-type) {
