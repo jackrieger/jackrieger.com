@@ -9,7 +9,6 @@ $line_height_mobile: 24px;
 $line_length: 31em;
 
 $blue: #0000ff;
-$gray: #eeeeee;
 
 @mixin font {
   font-family: system-ui, helvetica, arial, sans-serif;
@@ -24,7 +23,6 @@ $gray: #eeeeee;
 }
 
 html {
-  background-color: $gray;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
