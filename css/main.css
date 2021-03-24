@@ -50,6 +50,10 @@ ul {
   margin-bottom: 1rem;
 }
 
+.font-small {
+  font-size: 15px;
+}
+
 @media screen and (min-width: 600px) {
   body {
     display: flex;
