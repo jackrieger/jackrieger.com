@@ -74,7 +74,13 @@
   </body>
   <script>
 
-    const updated_at = new Date(2021, 2, 24, 23, 27, 0); // Y M(zero indexed) D H M Ml
+    const y = 2021;     // year
+    const m = (4 - 1);  // month (zero-indexed)
+    const d = 1;        // day
+    const h = 20;       // hour (24 hr time)
+    const mn = 21;      // minute
+    const ml = 0;       // millisecond
+    const updated_at = new Date(y, m, d, h, mn, ml);
     const today = new Date();
     const time_since = today - updated_at;
 
@@ -88,6 +94,9 @@
     }
     else if (time_since < 604800000) {
       time_message = "a few days ago";
+    }
+    else if (time_since < 1209600000) {
+      time_message = "a week ago";
     }
     else if (time_since < 2419000000) {
       time_message = "a few weeks ago";
