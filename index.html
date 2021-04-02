@@ -77,29 +77,39 @@
     const y = 2021;     // year
     const m = (4 - 1);  // month (zero-indexed)
     const d = 1;        // day
-    const h = 20;       // hour (24 hr time)
-    const mn = 21;      // minute
+    const h = 21;       // hour (24 hr time)
+    const mn = 14;      // minute
     const ml = 0;       // millisecond
     const updated_at = new Date(y, m, d, h, mn, ml);
     const today = new Date();
     const time_since = today - updated_at;
 
     let time_message;
+    const hour_ms = 3600000;
+    const day_ms = 86400000;
+    const week_ms = 1209600000;
+    const month_ms = 2628000000;
 
-    if (time_since < 3600000) {
+    if (time_since < hour_ms) {
       time_message = "a few moments ago";
     }
-    else if (time_since < 86400000) {
+    else if (time_since < day_ms) {
       time_message = "a few hours ago";
     }
-    else if (time_since < 604800000) {
+    else if (time_since < (day_ms * 2)) {
+      time_message = "a day ago";
+    }
+    else if (time_since < week_ms) {
       time_message = "a few days ago";
     }
-    else if (time_since < 1209600000) {
+    else if (time_since < (week_ms * 2)) {
       time_message = "a week ago";
     }
-    else if (time_since < 2419000000) {
+    else if (time_since < month_ms) {
       time_message = "a few weeks ago";
+    }
+    else if (time_since < (month_ms * 2)) {
+      time_message = "a month ago";
     }
     else {
       time_message = "a few months ago";
