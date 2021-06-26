@@ -7,7 +7,7 @@ html {
 body {
   font-family: system-ui, arial, sans-serif;
   font-size: 19px;
-  letter-spacing: 0.0275em;
+  letter-spacing: 0.0225em;
   line-height: 1.35;
   max-width: 1500px;
   padding-bottom: 10px;
@@ -65,6 +65,7 @@ li:before {
   body {
     display: flex;
     font-size: 20px;
+    letter-spacing: 0.0275em;
     padding-right: 40px;
   }
 
