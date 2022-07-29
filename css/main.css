@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 html {
-  background-color: #fefefe;
+  background-color: #f5f5f5;
 }
 
 body {
   font-family: system-ui, arial, sans-serif;
   font-size: 19px;
-  letter-spacing: 0.0225em;
+  letter-spacing: 0.03em;
   line-height: 1.35;
-  max-width: 1500px;
+  max-width: 770px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -56,35 +56,10 @@ li:before {
   width: 100%;
 }
 
-.column-two {
-  width: 100%;
-}
-
-.column-two p {
+.column-one p {
   margin-bottom: 1rem;
 }
 
 .font-small {
   font-size: 14px;
-}
-
-@media screen and (min-width: 800px) {
-  body {
-    display: flex;
-    font-size: 20px;
-    letter-spacing: 0.0275em;
-    padding-right: 60px;
-  }
-
-  .column-one {
-    width: 32vw;
-  }
-
-  .column-two {
-    width: 68vw;
-  }
-
-  .font-small {
-    font-size: 15px;
-  }
 }
