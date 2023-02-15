@@ -68,4 +68,8 @@ li:before {
   body {
     font-size: 19px;
   }
+
+  ul {
+    max-width: 25rem;
+  }
 }
