@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
 html {
-  background-color: #f5f5f5;
+  --blue: #0000ff;
+  --gray: #eeeeee;
+  --green: #00ff00;
+  --white: #ffffff;
+  background-color: var(--gray);
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: var(--gray);
+  cursor: default;
   font-family: system-ui, arial, sans-serif;
   font-size: 21px;
   letter-spacing: 0.03em;
@@ -17,21 +22,25 @@ body {
   padding-top: 10px;
 }
 
+::selection {
+  background: var(--white);
+}
+
 a {
-  color: #0000ff;
+  color: var(--blue);
   text-decoration: none;
 }
 
 a:visited {
-  color: #0000ff;
+  color: var(--blue);
 }
 
 a:active {
-  color: #0000ff;
+  color: var(--blue);
 }
 
 a:hover {
-  color: #00ff00;
+  color: var(--green);
 }
 
 ul {
@@ -62,6 +71,11 @@ li:before {
 
 .font-small {
   font-size: 14px;
+}
+
+.job-title {
+  background-color: var(--white);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 576px) {
