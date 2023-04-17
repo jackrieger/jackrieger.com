@@ -23,7 +23,7 @@ body {
 }
 
 ::selection {
-  background: var(--white);
+  background-color: var(--white);
 }
 
 a {
@@ -73,7 +73,7 @@ li:before {
   font-size: 14px;
 }
 
-.job-title {
+.job-title:hover {
   background-color: var(--white);
   cursor: pointer;
 }

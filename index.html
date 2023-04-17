@@ -100,8 +100,8 @@
       const y = 2023; // year
       const m = (4 - 1); // month (zero-indexed = -1)
       const d = 16; // day
-      const h = 13; // hour (24 hr time)
-      const n = 39; // minute
+      const h = 20; // hour (24 hr time)
+      const n = 30; // minute
       const updated_at = new Date(y, m, d, h, n, 0);
       const today = new Date();
       const time_since = today - updated_at;
@@ -142,12 +142,13 @@
 
     function setJobText() {
       const titles = [
+        "coder",
+        "developer",
         "full-stack developer",
         "programmer",
         "software engineer",
-        "web developer",
-        "coder",
         "technologist",
+        "web developer",
       ];
 
       const title_element = document.querySelector(".js-job-title");
