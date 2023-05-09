@@ -97,10 +97,10 @@
 
     function setTime() {
       const y = 2023; // year
-      const m = (4 - 1); // month (zero-indexed)
-      const d = 20; // day
-      const h = 21; // hour (24 hr time)
-      const n = 16; // minute
+      const m = (5 - 1); // month (zero-indexed)
+      const d = 9; // day
+      const h = 14; // hour (24 hr time)
+      const n = 30; // minute
       const updated_at = new Date(y, m, d, h, n, 0);
       const today = new Date();
       const time_since = today - updated_at;
@@ -152,6 +152,7 @@
         "software engineer",
         "technologist",
         "web developer",
+        "middle-end developer"
       ];
 
       const title_element = document.querySelector(".js-job-title");
