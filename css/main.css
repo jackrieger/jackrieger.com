@@ -7,8 +7,8 @@
 
 @font-face {
   font-family: "Hershey Simplex";
-  src: url('../fonts/AVHersheySimplexMediumItalic.ttf');
   font-style: italic;
+  src: url('../fonts/AVHersheySimplexMediumItalic.ttf');
 }
 
 html {
@@ -96,10 +96,11 @@ li:before {
 
 @media screen and (max-width: 400px) {
   body {
-    font-size: 28px;
+    font-size: 29px;
+    line-height: 1.05;
   }
 
   .font-small {
-    font-size: 20px;
+    font-size: 21px;
   }
 }
