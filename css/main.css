@@ -96,7 +96,7 @@ li:before {
 
 @media screen and (max-width: 400px) {
   body {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .font-small {
