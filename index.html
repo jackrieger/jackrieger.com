@@ -119,16 +119,17 @@
       el.addEventListener("click", function (e) {
         e.preventDefault();
 
-        const text = el.innerText;
+        const html = el.innerHTML;
+        const email = "jack@jackrieger.com";
 
-        navigator.clipboard.writeText(text).then(function () {
+        navigator.clipboard.writeText(email).then(function () {
           el.innerText = "Email copied!"
         }, function (err) {
-          console.error('Could not copy email.', err);
+          console.error("Could not copy email.", err);
         });
 
         setTimeout(function () {
-          el.innerText = text;
+          el.innerHTML = html;
         }, 2000);
       })
     }
@@ -142,25 +143,23 @@
         "software engineer",
         "technologist",
         "web developer",
-        "middle-end developer"
       ];
 
-      const title_element = document.querySelector(".js-job-title");
+      const titleElement = document.querySelector(".js-job-title");
 
       function getJobTitle() {
         return titles[Math.floor(Math.random() * titles.length)];
       }
 
-      title_element.addEventListener("click", function (e) {
-        const current = title_element.innerText;
+      titleElement.addEventListener("click", function (e) {
+        const current = titleElement.innerHTML;
         let selection = getJobTitle();
 
         while (current === selection) {
-          console.log(current, selection);
           selection = getJobTitle();
         }
 
-        title_element.innerText = selection;
+        titleElement.innerText = selection;
       });
     }
 
