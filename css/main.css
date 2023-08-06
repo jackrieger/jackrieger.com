@@ -93,14 +93,3 @@ li:before {
   color: var(--green);
   cursor: pointer;
 }
-
-@media screen and (max-width: 400px) {
-  body {
-    font-size: 29px;
-    line-height: 1.05;
-  }
-
-  .font-small {
-    font-size: 21px;
-  }
-}
