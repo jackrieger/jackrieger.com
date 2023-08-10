@@ -80,11 +80,6 @@ li:before {
   margin-bottom: 1rem;
 }
 
-.missing-character {
-  font-family: helvetica, sans-serif;
-  font-weight: 200;
-}
-
 .font-small {
   font-size: 16px;
 }
