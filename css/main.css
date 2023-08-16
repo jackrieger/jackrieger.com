@@ -13,13 +13,14 @@
 
 html {
   --blue: #2222ff;
-  --gray: #eeeeee;
+  --gray: #ededed;
   --green: #14F578;
-  background-color: var(--gray);
+  --white: #fdfdfd;
+  background-color: var(--white);
 }
 
 body {
-  background-color: var(--gray);
+  background-color: var(--white);
   cursor: default;
   font-family: "Hershey Simplex", helvetica, sans-serif;
   font-size: 23px;
@@ -34,7 +35,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--green);
+  background-color: var(--gray);
 }
 
 a {
