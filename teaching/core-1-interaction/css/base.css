@@ -1,0 +1,24 @@
+html {
+  --black: #111111;
+  --blue: #0000ff;
+  --white: #e6dfd1;
+}
+
+body {
+  background-color: var(--white);
+  font-family: arial, sans-serif;
+}
+
+a {
+  color: var(--black);
+}
+
+a:visited {
+  color: var(--black);
+}
+
+img {
+  max-height: 50vh;
+}
+
+/*# sourceMappingURL=base.css.map */
