@@ -4,26 +4,39 @@
 
 h1 {
   font-size: unset;
+  font-weight: unset;
 }
 
 h2 {
   font-size: unset;
+  font-weight: unset;
 }
 
 h3 {
   font-size: unset;
+  font-weight: unset;
 }
 
 h4 {
   font-size: unset;
+  font-weight: unset;
 }
 
 h5 {
   font-size: unset;
+  font-weight: unset;
 }
 
 h6 {
   font-size: unset;
+  font-weight: unset;
+}
+
+hr {
+  border: none;
+  border-bottom: solid 1px var(--black);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=reset.css.map */

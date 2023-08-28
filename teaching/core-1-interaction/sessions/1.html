@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/base.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/nav.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/main.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/pixel.css">
   </head>
   <body>
     <nav class="nav">
@@ -58,28 +59,96 @@
       </div>
     </nav>
     <main class="main">
-      <ul>
-  <li>Introductions
-    <ul>
-      <li>name, pronouns, where are you from?</li>
-      <li>what’s something you’re passionate about outside of design? (if it’s only design, that’s ok too)</li>
-    </ul>
-  </li>
-  <li>Who am I?</li>
-  <li>Syllabus</li>
-  <li>Group discussions
-    <ul>
-      <li>get into groups of 4 with the people immediately next to you</li>
-      <li>discuss: what do you think this class is about? are you excited by anything in particular?</li>
-      <li>do you have any questions about the syllabus?</li>
-      <li>share your thoughts after ~5 min</li>
-    </ul>
-  </li>
-  <li>Break (10 min)</li>
-  <li>Everything is a web page</li>
-  <li>Harmonic collection</li>
+      <h1>Session 1</h1>
+      <h2 id="introductions">Introductions</h2>
+
+<ul>
+  <li>name, pronouns, where are you from?</li>
+  <li>what’s something you’re passionate about outside of design? (if it’s only design, that’s ok too)</li>
 </ul>
 
+<h2 id="who-am-i">Who am I?</h2>
+
+<h2 id="syllabus">Syllabus</h2>
+
+<p>We will now go over the syllabus. You can download it from the <a href="/teaching/core-1-interaction/library">Library</a>.</p>
+
+<h2 id="group-chat">Group chat</h2>
+<ul>
+  <li>get into groups of 4 with the people immediately next to you</li>
+  <li>discuss: what do you think this class is about? are you excited by anything in particular?</li>
+  <li>do you have any questions about the syllabus?</li>
+  <li>share your thoughts after ~5 min</li>
+</ul>
+
+<h2 id="break-10-min">Break (~10 min)</h2>
+
+<h2 id="lecture-everything-is-a-web-page">Lecture: <em>Everything is a web page</em></h2>
+
+<h2 id="project-harmonic-collection">Project: Harmonic collection</h2>
+
     </main>
+    <div class="pixel-button js-pixel-button">
+      *
+    </div>
+    <script>
+      const button = document.querySelector('.js-pixel-button');
+      const hex = [
+        "#FF5555", // Bright Red
+        "#FFA533", // Bright Orange
+        "#FFFF66", // Bright Yellow
+        "#55FF55", // Bright Green
+        "#5555FF", // Bright Blue
+        "#7D26CD", // Bright Indigo
+        "#BE29E4"  // Bright Violet
+      ];
+      let interval;
+
+      function createPixel() {
+        const pixel = document.createElement('span');
+        pixel.className = 'black-pixel';
+        pixel.style.left = `${Math.random() * 100}%`;
+        pixel.style.top = `${Math.random() * 100}%`;
+        pixel.style.color = hex[Math.floor(Math.random() * hex.length)];
+        pixel.innerText = "*";
+        document.body.appendChild(pixel);
+      }
+
+      function fillPageWithBlack() {
+        const totalPixels = window.innerWidth * window.innerHeight;
+        let pixelsCreated = 0;
+
+        interval = setInterval(() => {
+          createPixel();
+          pixelsCreated++;
+
+          if (pixelsCreated >= totalPixels) {
+            clearInterval(interval);
+          }
+        }, 25);
+      }
+
+      function clearPage() {
+        const pixels = document.querySelectorAll('.black-pixel');
+        pixels.forEach((pixel) => {
+          pixel.remove();
+        });
+      }
+
+      function togglePixelButton() {
+        if (button.classList.contains('active')) {
+          button.classList.remove('active');
+          clearPage();
+          clearInterval(interval);
+        } else {
+          button.classList.add('active');
+          fillPageWithBlack();
+        }
+      }
+
+      button.addEventListener('click', () => {
+        togglePixelButton();
+      });
+    </script>
   </body>
 </html>

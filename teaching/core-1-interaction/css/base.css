@@ -1,6 +1,7 @@
 html {
   --black: #000000;
-  --white: #e6dfd1;
+  --gray: #dddddd;
+  --white: #f4ecdd;
 }
 
 body {
@@ -10,15 +11,15 @@ body {
 }
 
 a {
-  border-bottom: solid 1px var(--black);
-  color: inherit;
+  border-bottom: solid 1px currentcolor;
+  color: blue;
   text-decoration: none;
 }
 a:hover {
   border-bottom: none;
 }
 a:visited {
-  color: inherit;
+  color: blue;
 }
 
 img {

@@ -25,7 +25,14 @@
 .nav__link-span.active {
   -webkit-font-smoothing: antialiased;
   background-color: var(--black);
-  color: var(--white);
+}
+.nav__link-span.active .nav__link {
+  border-bottom: none;
+  color: var(--white) !important;
+}
+
+.nav__link {
+  color: var(--black) !important;
 }
 
 /*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,29 @@
+.black-pixel {
+  animation: fade-in 0.5s linear forwards;
+  content: "*";
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  font-family: menlo;
+}
+
+.pixel-button {
+  font-family: menlo;
+}
+.pixel-button.active {
+  background-color: var(--black);
+  color: var(--white);
+}
+.pixel-button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=pixel.css.map */
