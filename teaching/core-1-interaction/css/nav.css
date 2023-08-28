@@ -1,0 +1,31 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  width: 100%;
+  font-size: 21px;
+  letter-spacing: 0.015em;
+  line-height: 1.3;
+}
+
+.nav__right {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.nav__right .nav__link-span {
+  margin-left: 0.25em;
+}
+
+.nav__link-span {
+  background-color: var(--white);
+  display: inline-block;
+  padding: 0.25em;
+}
+.nav__link-span.active {
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/*# sourceMappingURL=nav.css.map */
