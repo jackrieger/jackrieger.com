@@ -1,0 +1,19 @@
+.top-button {
+  align-items: center;
+  border: solid 1px var(--black);
+  bottom: 1rem;
+  color: var(--black);
+  display: flex;
+  height: 1.5rem;
+  justify-content: center;
+  position: fixed;
+  right: 3rem;
+  width: 1.5rem;
+}
+.top-button:hover {
+  background-color: var(--black);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=top_button.css.map */

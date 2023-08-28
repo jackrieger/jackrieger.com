@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Core 1: Interaction</title>
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/reset.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/tags.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/base.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/nav.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/main.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/top_button.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/pixel.css">
   </head>
   <body>
@@ -71,26 +73,6 @@ Academic Entrance 63 Fifth Ave, Room 502</p>
 <p>Contact:<br />
 riegerj@newschool.edu</p>
 
-<hr />
-
-<h1 id="unit-1">Unit 1</h1>
-
-<h2 id="week-1-4-working-methods-and-web-typography">Week 1-4: Working Methods and Web Typography</h2>
-
-<p>The first segment of Core Interaction will focus on the tools and concepts required for building interactive experiences. We’ll use the languages of the web because they’re accessible and immediately open up new modes of communication for designers, but the concepts will be transferable to any screen-based or interactive media.</p>
-
-<p>In weeks 1-4 we will focus on:</p>
-
-<ul>
-  <li>File management (naming, organization, file paths)</li>
-  <li>Setting up and starting a new project</li>
-  <li>Tools (code editor, inspector, git/github)</li>
-  <li>HTML/CSS basic concepts and syntax</li>
-  <li>Figma (components, prototyping, grids, canvas sizing)</li>
-  <li>Putting a website online (hosting, Github, custom domains)</li>
-  <li>Connecting to other web services</li>
-</ul>
-
 <!--
 # Unit 1
 
@@ -140,67 +122,13 @@ Connecting to other web services
 -->
 
     </main>
+    <div class="top-button js-top-button">
+      ↑
+    </div>
     <div class="pixel-button js-pixel-button">
       *
     </div>
-    <script>
-      const button = document.querySelector('.js-pixel-button');
-      const hex = [
-        "#FF5555", // Bright Red
-        "#FFA533", // Bright Orange
-        "#FFFF66", // Bright Yellow
-        "#55FF55", // Bright Green
-        "#5555FF", // Bright Blue
-        "#7D26CD", // Bright Indigo
-        "#BE29E4"  // Bright Violet
-      ];
-      let interval;
-
-      function createPixel() {
-        const pixel = document.createElement('span');
-        pixel.className = 'black-pixel';
-        pixel.style.left = `${Math.random() * 100}%`;
-        pixel.style.top = `${Math.random() * 100}%`;
-        pixel.style.color = hex[Math.floor(Math.random() * hex.length)];
-        pixel.innerText = "*";
-        document.body.appendChild(pixel);
-      }
-
-      function fillPageWithBlack() {
-        const totalPixels = window.innerWidth * window.innerHeight;
-        let pixelsCreated = 0;
-
-        interval = setInterval(() => {
-          createPixel();
-          pixelsCreated++;
-
-          if (pixelsCreated >= totalPixels) {
-            clearInterval(interval);
-          }
-        }, 25);
-      }
-
-      function clearPage() {
-        const pixels = document.querySelectorAll('.black-pixel');
-        pixels.forEach((pixel) => {
-          pixel.remove();
-        });
-      }
-
-      function togglePixelButton() {
-        if (button.classList.contains('active')) {
-          button.classList.remove('active');
-          clearPage();
-          clearInterval(interval);
-        } else {
-          button.classList.add('active');
-          fillPageWithBlack();
-        }
-      }
-
-      button.addEventListener('click', () => {
-        togglePixelButton();
-      });
-    </script>
+    <script src="/teaching/core-1-interaction/js/top_button.js"></script>
+    <script src="/teaching/core-1-interaction/js/pixel.js"></script>
   </body>
 </html>

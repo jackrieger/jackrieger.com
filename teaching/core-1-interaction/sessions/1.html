@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Session 1</title>
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/reset.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/tags.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/base.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/nav.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/main.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/top_button.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/pixel.css">
   </head>
   <body>
@@ -21,7 +23,7 @@
         </span>
       </div>
       <div class="nav__right">
-        <span class="nav__link-span ">
+        <span class="nav__link-span active">
           <a class="nav__link" href="/teaching/core-1-interaction/sessions">
             Sessions
           </a>
@@ -60,95 +62,61 @@
     </nav>
     <main class="main">
       <h1>Session 1</h1>
-      <h2 id="introductions">Introductions</h2>
+      <h2 id="who-are-you">Who are you?</h2>
+
+<p>Let’s start with some introductions! We will get to know each other better over the semester, but for now:</p>
 
 <ul>
-  <li>name, pronouns, where are you from?</li>
-  <li>what’s something you’re passionate about outside of design? (if it’s only design, that’s ok too)</li>
+  <li>Name, pronouns, where are you from?</li>
+  <li>What’s something you’re passionate about outside of design? (if it’s only design, that’s ok too)</li>
 </ul>
 
 <h2 id="who-am-i">Who am I?</h2>
 
+<p>I am a developer at <a href="https://www.linkedbyair.net">Linked by Air</a>. I have been working there since 2019.</p>
+
+<p>I went to Parsons and graduated in 2019. Around 7 years ago, I took this exact class.</p>
+
 <h2 id="syllabus">Syllabus</h2>
 
-<p>We will now go over the syllabus. You can download it from the <a href="/teaching/core-1-interaction/library">Library</a>.</p>
+<p>We will now go over the <a href="/teaching/core-1-interaction/files/syllabus_pucd2035_fall_2023.pdf">syllabus</a>. You can download it from the <a href="/teaching/core-1-interaction/library">Library</a>.</p>
 
 <h2 id="group-chat">Group chat</h2>
+
+<p>Get into groups of 4 with the people immediately next to you and discuss:</p>
+
 <ul>
-  <li>get into groups of 4 with the people immediately next to you</li>
-  <li>discuss: what do you think this class is about? are you excited by anything in particular?</li>
-  <li>do you have any questions about the syllabus?</li>
-  <li>share your thoughts after ~5 min</li>
+  <li>What do you think this class is about?</li>
+  <li>Do you have any questions about the syllabus?</li>
 </ul>
+
+<p>We will share again after ~10 min.</p>
 
 <h2 id="break-10-min">Break (~10 min)</h2>
 
 <h2 id="lecture-everything-is-a-web-page">Lecture: <em>Everything is a web page</em></h2>
 
+<p>Michael Fehrenbach, a fellow teacher here at Parsons, has prepared a great <a href="/teaching/core-1-interaction/lectures/everything-is-a-web-page">lecture</a> about the internet.</p>
+
 <h2 id="project-harmonic-collection">Project: Harmonic collection</h2>
 
+<p>You only have one project this semester, and <a href="/teaching/core-1-interaction/project">this is it</a>.</p>
+
+<h2 id="for-next-class">For next class</h2>
+
+<ul>
+  <li>Come to class with three ideas for your Harmonic Collection’s theme</li>
+  <li>Reading: <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What is Code?</a> (it’s a long one, but it’s important)</li>
+</ul>
+
     </main>
+    <div class="top-button js-top-button">
+      ↑
+    </div>
     <div class="pixel-button js-pixel-button">
       *
     </div>
-    <script>
-      const button = document.querySelector('.js-pixel-button');
-      const hex = [
-        "#FF5555", // Bright Red
-        "#FFA533", // Bright Orange
-        "#FFFF66", // Bright Yellow
-        "#55FF55", // Bright Green
-        "#5555FF", // Bright Blue
-        "#7D26CD", // Bright Indigo
-        "#BE29E4"  // Bright Violet
-      ];
-      let interval;
-
-      function createPixel() {
-        const pixel = document.createElement('span');
-        pixel.className = 'black-pixel';
-        pixel.style.left = `${Math.random() * 100}%`;
-        pixel.style.top = `${Math.random() * 100}%`;
-        pixel.style.color = hex[Math.floor(Math.random() * hex.length)];
-        pixel.innerText = "*";
-        document.body.appendChild(pixel);
-      }
-
-      function fillPageWithBlack() {
-        const totalPixels = window.innerWidth * window.innerHeight;
-        let pixelsCreated = 0;
-
-        interval = setInterval(() => {
-          createPixel();
-          pixelsCreated++;
-
-          if (pixelsCreated >= totalPixels) {
-            clearInterval(interval);
-          }
-        }, 25);
-      }
-
-      function clearPage() {
-        const pixels = document.querySelectorAll('.black-pixel');
-        pixels.forEach((pixel) => {
-          pixel.remove();
-        });
-      }
-
-      function togglePixelButton() {
-        if (button.classList.contains('active')) {
-          button.classList.remove('active');
-          clearPage();
-          clearInterval(interval);
-        } else {
-          button.classList.add('active');
-          fillPageWithBlack();
-        }
-      }
-
-      button.addEventListener('click', () => {
-        togglePixelButton();
-      });
-    </script>
+    <script src="/teaching/core-1-interaction/js/top_button.js"></script>
+    <script src="/teaching/core-1-interaction/js/pixel.js"></script>
   </body>
 </html>

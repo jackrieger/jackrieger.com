@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Project</title>
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/reset.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/tags.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/base.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/nav.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/main.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/top_button.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/pixel.css">
   </head>
   <body>
@@ -60,17 +62,17 @@
     </nav>
     <main class="main">
       <h1>Project</h1>
-      <p>Harmonic Collection</p>
+      <h2 id="harmonic-collection">Harmonic Collection</h2>
 
 <p>You’re going to pick a theme to explore visually for the duration of the semester. Each week, you’ll design and code an entry to a collection that explores this theme. At the end of the semester, you’ll deliver a website that houses 11 programmed entries. The website container is part of the design, as well.</p>
 
-<p>Project Description</p>
+<h3 id="project-description">Project Description</h3>
 
 <p>In mathematics, a sequence is defined as a series of numbers arranged in a predictable pattern. It’s a type of number set which follows specific, definite rules. When translated to design, sequencing is a natural part of systems — each individual item has unifying elements that when looked at as a whole, tells a larger story.</p>
 
 <p>In this class you’ll create a Harmonic Collection that explores a theme of your choice. Each week, you’ll design and code an entry into your collection that makes use of the HTML, CSS, and JavaScript skills we’re developing. First, you will pick a theme of your choice (think of it as the overarching concept you’ll explore through a series of sketches). Your theme should be open-ended enough to encourage a range of content, but specific enough to inspire an idea each week for twelve weeks. (Example themes: Your daily commute, solitude, interesting words you came across in articles this week). In the final weeks of the semester, you’ll refine your 11 entries so that they communicate a clear exploration and deliver a website that houses all of them together. You might need to re-organize or add additional content to your container or entries to fully realize your idea.</p>
 
-<p>Minimum Requirements</p>
+<h3 id="minimum-requirements">Minimum Requirements</h3>
 
 <ul>
   <li>The website and all the entries must be responsive (work on a variety of screen sizes).</li>
@@ -80,67 +82,13 @@
 </ul>
 
     </main>
+    <div class="top-button js-top-button">
+      ↑
+    </div>
     <div class="pixel-button js-pixel-button">
       *
     </div>
-    <script>
-      const button = document.querySelector('.js-pixel-button');
-      const hex = [
-        "#FF5555", // Bright Red
-        "#FFA533", // Bright Orange
-        "#FFFF66", // Bright Yellow
-        "#55FF55", // Bright Green
-        "#5555FF", // Bright Blue
-        "#7D26CD", // Bright Indigo
-        "#BE29E4"  // Bright Violet
-      ];
-      let interval;
-
-      function createPixel() {
-        const pixel = document.createElement('span');
-        pixel.className = 'black-pixel';
-        pixel.style.left = `${Math.random() * 100}%`;
-        pixel.style.top = `${Math.random() * 100}%`;
-        pixel.style.color = hex[Math.floor(Math.random() * hex.length)];
-        pixel.innerText = "*";
-        document.body.appendChild(pixel);
-      }
-
-      function fillPageWithBlack() {
-        const totalPixels = window.innerWidth * window.innerHeight;
-        let pixelsCreated = 0;
-
-        interval = setInterval(() => {
-          createPixel();
-          pixelsCreated++;
-
-          if (pixelsCreated >= totalPixels) {
-            clearInterval(interval);
-          }
-        }, 25);
-      }
-
-      function clearPage() {
-        const pixels = document.querySelectorAll('.black-pixel');
-        pixels.forEach((pixel) => {
-          pixel.remove();
-        });
-      }
-
-      function togglePixelButton() {
-        if (button.classList.contains('active')) {
-          button.classList.remove('active');
-          clearPage();
-          clearInterval(interval);
-        } else {
-          button.classList.add('active');
-          fillPageWithBlack();
-        }
-      }
-
-      button.addEventListener('click', () => {
-        togglePixelButton();
-      });
-    </script>
+    <script src="/teaching/core-1-interaction/js/top_button.js"></script>
+    <script src="/teaching/core-1-interaction/js/pixel.js"></script>
   </body>
 </html>

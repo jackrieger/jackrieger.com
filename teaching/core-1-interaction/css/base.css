@@ -10,20 +10,4 @@ body {
   margin: 0;
 }
 
-a {
-  border-bottom: solid 1px currentcolor;
-  color: blue;
-  text-decoration: none;
-}
-a:hover {
-  border-bottom: none;
-}
-a:visited {
-  color: blue;
-}
-
-img {
-  max-width: 100%;
-}
-
 /*# sourceMappingURL=base.css.map */

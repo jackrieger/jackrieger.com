@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: unset;
   font-weight: unset;
@@ -30,13 +40,6 @@ h5 {
 h6 {
   font-size: unset;
   font-weight: unset;
-}
-
-hr {
-  border: none;
-  border-bottom: solid 1px var(--black);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=reset.css.map */
