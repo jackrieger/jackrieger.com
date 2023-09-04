@@ -1,9 +1,10 @@
 .nav {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 1rem;
   width: 100%;
-  font-size: 21px;
+  font-size: 20px;
   letter-spacing: 0.015em;
   line-height: 1.3;
 }
@@ -11,6 +12,7 @@
 .nav__right {
   display: flex;
   flex-grow: 1;
+  flex-wrap: wrap;
   justify-content: flex-end;
 }
 .nav__right .nav__link-span {
@@ -33,6 +35,21 @@
 
 .nav__link {
   color: var(--black) !important;
+}
+
+@media screen and (max-width: 950px) {
+  .nav__left {
+    width: 100%;
+  }
+  .nav__right {
+    margin-top: 0.5em;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav__right .nav__link-span {
+    margin-left: 0;
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=nav.css.map */

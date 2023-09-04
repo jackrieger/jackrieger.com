@@ -1,5 +1,6 @@
 .top-button {
   align-items: center;
+  background-color: var(--white);
   border: solid 1px var(--black);
   bottom: 1rem;
   color: var(--black);

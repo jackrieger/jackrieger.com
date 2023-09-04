@@ -1,0 +1,109 @@
+/*
+background-color: #1e1e1e; // bkg-gray
+
+border-radius: 5px; // border-radius
+
+color: #d4d4d4; // base text color
+color: #649ad1; // blue
+color: #a7d9f9; // light blue
+color: #688855; // green
+color: #c6947c; // orange
+
+font-family: menlo, monospace; // font
+
+padding: 0.25em;
+*/
+/* HTML/CSS/JS only rouge declarations */
+/* Default text color and background color */
+.highlight,
+.highlight .w {
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  color: #d4d4d4;
+  font-family: menlo, monospace;
+  overflow: scroll;
+}
+
+/* Keywords and related tokens */
+/* Generic tokens */
+/* Numbers */
+/* Constructors */
+/* Operators */
+/* Function and class names */
+.highlight .na {
+  color: #a7d9f9;
+}
+
+/* Types and type names */
+.highlight .nt {
+  color: #649ad1;
+}
+
+/* Literal and variable content */
+/* Symbols and brackets */
+/* Exceptions */
+/* Numeric values */
+/* Operators and punctuations */
+/* User-defined variables and functions */
+/* Comments and documentation */
+.highlight .c,
+.highlight .ch,
+.highlight .cd,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs {
+  color: #688855;
+}
+
+.highlight .cp {
+  color: #649ad1;
+}
+
+/* Imports and includes */
+.highlight .s {
+  color: #c6947c;
+}
+
+/* Code syntax for items not classed specifically by rouge */
+code {
+  font-family: menlo, monospace;
+  font-size: 0.8em;
+  line-height: 1.25;
+}
+
+li code {
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  color: #d4d4d4;
+  font-family: menlo, monospace;
+  font-size: 0.8em;
+  line-height: 1.25;
+  padding-bottom: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.25em;
+}
+
+pre.highlight {
+  font-family: menlo, monospace;
+  line-height: 1.25;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+p code {
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  color: #d4d4d4;
+  font-family: menlo, monospace;
+  font-size: 0.8em;
+  line-height: 1.25;
+  padding-bottom: 0.25em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.25em;
+}
+
+/*# sourceMappingURL=syntax.css.map */
