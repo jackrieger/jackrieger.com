@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="description" content=""> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Session 3</title>
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/reset.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/tags.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/base.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/nav.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/main.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/buttons.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/pixel.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__left">
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/">
+            Core 1: Interaction
+          </a>
+        </span>
+      </div>
+      <div class="nav__right">
+        <span class="nav__link-span active">
+          <a class="nav__link" href="/teaching/core-1-interaction/sessions">
+            Sessions
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/lectures">
+            Lectures
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/project">
+            Project
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/library">
+            Library
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/references">
+            References
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/students">
+            Students
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/colophon">
+            Colophon
+          </a>
+        </span>
+      </div>
+    </nav>
+    <main class="main">
+      <h1>Session 3</h1>
+      <hr>
+      <h2 id="presentations">Presentations</h2>
+
+<h2 id="break-10-min">Break (~10 min)</h2>
+
+<h2 id="intro-to-css">Intro to CSS</h2>
+
+<h2 id="git-config">Git config</h2>
+
+<p>We’re going to pick up where we left off with getting a repository up on GitHub, though we will not be using the Terminal. This repository will be where your Harmonic Collection lives and is made available on the internet.</p>
+
+<details>
+	<summary><p>How to create and upload your repo using GitHub Desktop</p>
+</summary>
+	<div>
+		
+<p>Using GitHub Desktop, do the following:</p>
+
+<ul>
+  <li>sign in with your GitHub account</li>
+  <li>select “Create a New Repository on your Hard Drive”</li>
+  <li>use the following settings for your repository:
+    <ul>
+      <li>you can use a different file destination (for Local Path) but be sure it is somewhere you can easily access</li>
+    </ul>
+  </li>
+</ul>
+
+<figure>
+	
+		<img src="repo-settings.png" />
+	
+	
+</figure>
+
+<ul>
+  <li>Click “Create Repository”, and then “Open this repository in your external editor”</li>
+  <li>Create an <code class="language-plaintext highlighter-rouge">index.html</code> file and create two folders (one called <code class="language-plaintext highlighter-rouge">css</code>, one called <code class="language-plaintext highlighter-rouge">images</code>) within your <code class="language-plaintext highlighter-rouge">harmonic-collection</code> folder:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>css
+  main.css
+images
+  .keep
+index.html
+</code></pre></div></div>
+
+<ul>
+  <li>The <code class="language-plaintext highlighter-rouge">.keep</code> file is a placeholder file that tells git to commit an empty folder. Without it, git will think there is nothing to add for that folder.</li>
+  <li>Delete the <code class="language-plaintext highlighter-rouge">.gitattributes</code> folder</li>
+  <li>It should look like this now:</li>
+</ul>
+
+<figure>
+	
+		<img src="repo-structure.png" />
+	
+	
+</figure>
+
+<ul>
+  <li>Go back to GitHub Desktop and go to the input fields at the bottom left. We will now write a very short message describing the changes we just made to our code:</li>
+</ul>
+
+<figure>
+	
+		<img src="commit-msg.png" />
+	
+	
+</figure>
+
+<ul>
+  <li>Click “Commit to main”</li>
+  <li>Now back on the homepage, click “Publish repository”
+    <ul>
+      <li>the default settings are fine, click “Publish” again on the next popup window</li>
+    </ul>
+  </li>
+  <li>Now our repository is up on GitHub! Go to your account on github.com and browse to make sure it is there</li>
+</ul>
+
+<p>What did we just do?</p>
+
+<p>First, we initialized a repository from GitHub Desktop. A repository is a storage space for code and related files. Then we added some starter files for our project. After adding these files, we made a commit. A commit in Git is a fundamental action that represents a snapshot of changes made to a repository’s files and directories. It’s a way of recording the modifications you’ve made to the codebase at a specific point in time. Finally, we pushed the commit up to GitHub. In Git, a “push” refers to the action of sending your local code changes to a remote repository.</p>
+
+<p>There are two versions of your repository talking to one another, your local and your remote. The local repository is the version of the code stored on your computer, while the remote repository is the version stored elsewhere (GitHub, in our case).</p>
+
+
+	</div>
+</details>
+
+
+    </main>
+    <div class="top-button js-top-button">
+      ↑
+    </div>
+    <div class="pixel-button js-pixel-button">
+      *
+    </div>
+    <div class="css-button js-css-button">
+      CSS
+    </div>
+    <script src="/teaching/core-1-interaction/js/top_button.js"></script>
+    <script src="/teaching/core-1-interaction/js/pixel.js"></script>
+    <script src="/teaching/core-1-interaction/js/css_button.js"></script>
+  </body>
+</html>

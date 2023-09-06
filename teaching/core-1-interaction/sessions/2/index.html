@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/base.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/nav.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/main.css">
-    <link rel="stylesheet" href="/teaching/core-1-interaction/css/top_button.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/buttons.css">
     <link rel="stylesheet" href="/teaching/core-1-interaction/css/pixel.css">
   </head>
   <body>
@@ -89,94 +89,12 @@
 
 <p>Let’s present our ideas for the theme of our harmonic collection, and show off the one project that you’re proud of / represents yourself as a designer. Each person will have 5 minutes.</p>
 
-<h2 id="git-config">Git config</h2>
-
-<p>We’re going to pick up where we left off with getting a repository up on GitHub, though we will not be using the Terminal. This repository will be where your Harmonic Collection lives and is made available on the internet.</p>
-
-<details>
-	<summary><p>How to create and upload your repo using GitHub Desktop</p>
-</summary>
-	<div>
-		
-<p>Using GitHub Desktop, do the following:</p>
-
-<ul>
-  <li>sign in with your GitHub account</li>
-  <li>select “Create a New Repository on your Hard Drive”</li>
-  <li>use the following settings for your repository:
-    <ul>
-      <li>you can use a different file destination (for Local Path) but be sure it is somewhere you can easily access</li>
-    </ul>
-  </li>
-</ul>
-
-<figure>
-	
-		<img src="repo-settings.png" />
-	
-	
-</figure>
-
-<ul>
-  <li>Click “Create Repository”, and then “Open this repository in your external editor”</li>
-  <li>Create an <code class="language-plaintext highlighter-rouge">index.html</code> file and create two folders (one called <code class="language-plaintext highlighter-rouge">css</code>, one called <code class="language-plaintext highlighter-rouge">images</code>) within your <code class="language-plaintext highlighter-rouge">harmonic-collection</code> folder:</li>
-</ul>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>css
-  main.css
-images
-  .keep
-index.html
-</code></pre></div></div>
-
-<ul>
-  <li>The <code class="language-plaintext highlighter-rouge">.keep</code> file is a placeholder file that tells git to commit an empty folder. Without it, git will think there is nothing to add for that folder.</li>
-  <li>Delete the <code class="language-plaintext highlighter-rouge">.gitattributes</code> folder</li>
-  <li>It should look like this now:</li>
-</ul>
-
-<figure>
-	
-		<img src="repo-structure.png" />
-	
-	
-</figure>
-
-<ul>
-  <li>Go back to GitHub Desktop and go to the input fields at the bottom left. We will now write a very short message describing the changes we just made to our code:</li>
-</ul>
-
-<figure>
-	
-		<img src="commit-msg.png" />
-	
-	
-</figure>
-
-<ul>
-  <li>Click “Commit to main”</li>
-  <li>Now back on the homepage, click “Publish repository”
-    <ul>
-      <li>the default settings are fine, click “Publish” again on the next popup window</li>
-    </ul>
-  </li>
-  <li>Now our repository is up on GitHub! Go to your account on github.com and browse to make sure it is there</li>
-</ul>
-
-<p>What did we just do?</p>
-
-<p>First, we initialized a repository from GitHub Desktop. A repository is a storage space for code and related files. Then we added some starter files for our project. After adding these files, we made a commit. A commit in Git is a fundamental action that represents a snapshot of changes made to a repository’s files and directories. It’s a way of recording the modifications you’ve made to the codebase at a specific point in time. Finally, we pushed the commit up to GitHub. In Git, a “push” refers to the action of sending your local code changes to a remote repository.</p>
-
-<p>There are two versions of your repository talking to one another, your local and your remote. The local repository is the version of the code stored on your computer, while the remote repository is the version stored elsewhere (GitHub, in our case).</p>
-
-
-	</div>
-</details>
-
 <h2 id="for-next-class">For next class</h2>
 
 <ul>
-  <li>Based on the feedback you received in class, move forward with one direction. Using HTML only, create the first entry that responds to your collection. Explore the concept through typographic or interface supporting HTML elements (no images, videos, or sounds for this entry). Think through the hierarchy of your entry:
+  <li>
+    <p>Based on the feedback you received in class, move forward with one direction. Using HTML only, create the first entry that responds to your collection. Explore the concept through typographic or interface supporting HTML elements (no images, videos, or sounds for this entry). Think through the hierarchy of your entry:</p>
+
     <ul>
       <li>What is the most important piece of information?</li>
       <li>How will you define that — with spacing, alignment, scale?</li>
@@ -185,12 +103,33 @@ index.html
     </ul>
   </li>
   <li>
-    <p>Submit the <code class="language-plaintext highlighter-rouge">index.html</code> file on Canvas, and push it to your remote repository on GitHub.</p>
+    <p>Submit the <code class="language-plaintext highlighter-rouge">index.html</code> file on Canvas.</p>
   </li>
-  <li>Reading: <a href="http://distributedweb.care/posts/online-achives/">Making Space in Online Archives</a> – Mindy Seu (read up until the Q&amp;A, read more if you want)</li>
+  <li>
+    <p>Reading: <a href="http://distributedweb.care/posts/online-achives/">Making Space in Online Archives</a> – Mindy Seu (read up until the Q&amp;A, read more if you want)</p>
+  </li>
 </ul>
 
 <h2 id="references">References</h2>
+
+<ul>
+  <li><a href="https://images.artistsspace.org/de1du8oz">Very, very good alt text</a></li>
+  <li><a href="https://perfume-area.com/">Perfume Area</a></li>
+  <li><a href="https://www.theuncomfortable.com/">Uncomfortable objects</a> (from Sai)</li>
+  <li>HTML only
+    <ul>
+      <li><a href="https://all-html.net/">all-html.net</a>, Evan Roth, 2011 (inspect to view HTML)</li>
+    </ul>
+  </li>
+  <li>HTML mainly, with a touch of CSS
+    <ul>
+      <li><a href="http://www.c3.hu/collection/form/">Form Art</a>, Alexei Shulgin, (1997)</li>
+      <li><a href="https://www.proseplay.net/">Prose Play</a>, Katherine Yang (2023)</li>
+      <li><a href="https://whenwe.love/forms/">Concrete Form</a>, Chia Amisola (2023)</li>
+      <li><a href="https://thehtml.review/02/whispers-from-a-soft-garden">Whispers From a Soft Garden</a></li>
+    </ul>
+  </li>
+</ul>
 
     </main>
     <div class="top-button js-top-button">
@@ -199,7 +138,11 @@ index.html
     <div class="pixel-button js-pixel-button">
       *
     </div>
+    <div class="css-button js-css-button">
+      CSS
+    </div>
     <script src="/teaching/core-1-interaction/js/top_button.js"></script>
     <script src="/teaching/core-1-interaction/js/pixel.js"></script>
+    <script src="/teaching/core-1-interaction/js/css_button.js"></script>
   </body>
 </html>
