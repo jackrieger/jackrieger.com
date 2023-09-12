@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/example.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main class="main main--example">
+      
+<div class="code">
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* The paragraph is the first descendent of its parent. */</span>
+<span class="nt">p</span><span class="nd">:first-child</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Paragraphs that are the 4th children. */</span>
+<span class="nt">p</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">4</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Last one. */</span>
+<span class="nt">p</span><span class="nd">:last-child</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">fuchsia</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Only one. */</span>
+<span class="nt">p</span><span class="nd">:only-child</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* You can invert these, too. */</span>
+<span class="nt">div</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:first-child</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">lightgray</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This should be blue.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Standard black, here.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Also black.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This one is purple!<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Back to black.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This will be fuchsia.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This should be red.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</code></pre></div></div>
+</div>
+<div class="example">
+<div>
+  <p>This should be blue.</p>
+  <p>Standard black, here.</p>
+  <p>Also black.</p>
+  <p>This one is purple!</p>
+  <p>Back to black.</p>
+  <p>This will be fuchsia.</p>
+</div>
+<div>
+  <p>This should be red.</p>
+</div>
+</div>
+
+    </main>
+  </body>
+
+</html>

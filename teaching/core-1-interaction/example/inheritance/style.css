@@ -1,0 +1,10 @@
+body .example {
+	color: gray;
+	font-family: sans-serif;
+}
+
+.example span {
+	color: blue;
+	font-style: italic;
+	font-weight: bold;
+}

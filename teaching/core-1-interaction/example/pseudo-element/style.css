@@ -1,0 +1,26 @@
+/* inserted before the heading */
+h1:before {
+	color: red;
+	content: ' ••• ';
+}
+
+/* inserted after the heading */
+h1:after {
+	color: blue;
+	content: ' * ~ * ';
+}
+
+p:first-letter {
+	color: gold;
+	font-size: 6em;
+	font-weight: bold;
+}
+
+p:first-line {
+	color: dodgerblue;
+}
+
+/* A practical case – outward arrow after external links. */
+a[href^='https://']:after {
+	content: ' ↗';
+}

@@ -1,0 +1,27 @@
+/* NOTE: example iframes do not include reset.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main--example {
+  display: flex;
+}
+.main--example > div {
+  width: 50%;
+}
+.main--example .highlight {
+  border-radius: unset;
+}
+
+.code .highlight {
+  border-radius: unset;
+  margin-bottom: unset;
+}
+
+.example {
+  background-color: white;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=example.css.map */

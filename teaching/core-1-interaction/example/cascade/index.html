@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/example.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main class="main main--example">
+      
+<div class="code">
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.note</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">gray</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Because this is lower, it will “win” the tie. */</span>
+<span class="nc">.warning</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"note"</span><span class="nt">&gt;</span>This paragraph will be gray, with just the “note” class.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"warning note"</span><span class="nt">&gt;</span>This paragraph will be red though, with both classes.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"note"</span><span class="nt">&gt;</span>This paragraph will also be gray, with just “note” again.<span class="nt">&lt;/p&gt;</span>
+
+</code></pre></div></div>
+</div>
+<div class="example">
+<p class="note">This paragraph will be gray, with just the “note” class.</p>
+<p class="warning note">This paragraph will be red though, with both classes.</p>
+<p class="note">This paragraph will also be gray, with just “note” again.</p>
+</div>
+
+    </main>
+  </body>
+
+</html>

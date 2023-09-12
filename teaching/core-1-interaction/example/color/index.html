@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/example.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main class="main main--example">
+      
+<div class="code">
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* There are a bunch of named colors. */</span>
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">1</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">dodgerblue</span>
+<span class="p">}</span>
+
+<span class="c">/* Or you can specify a hex value. Brands love these. */</span>
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">2</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#1e90ff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Or RGB for Red, Green, Blue, if you think like a screen. */</span>
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">3</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">30</span><span class="p">,</span> <span class="m">144</span><span class="p">,</span> <span class="m">255</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* Or Hue, Saturation, Lightness, which is more human. */</span>
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">4</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">hsl</span><span class="p">(</span><span class="m">210</span><span class="p">,</span> <span class="m">100%</span><span class="p">,</span> <span class="m">56%</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* RGB and HSL have a fourth value, for Alpha (transparency). */</span>
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">5</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span> <span class="m">144</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">50%</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">6</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="n">hsla</span><span class="p">(</span><span class="m">210</span><span class="p">,</span> <span class="m">100%</span><span class="p">,</span> <span class="m">56%</span><span class="p">,</span> <span class="m">0.5</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="c">/* Alpha as a percentage, 0–100%, or a decimal, 0–1. */</span>
+
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">7</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">dodgerblue</span><span class="p">;</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">0.5</span><span class="p">;</span> <span class="c">/* This will affect everything, not just text! */</span>
+<span class="p">}</span>
+
+<span class="nt">li</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">8</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">dodgerblue</span><span class="p">;</span> <span class="c">/* Same for backgrounds! */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;li&gt;</span>This paragraph will be <span class="nt">&lt;em&gt;</span>dodgerblue<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>Which can also be written as <span class="nt">&lt;em&gt;</span>#1e90ff<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>Or as <span class="nt">&lt;em&gt;</span>rgb(30, 144, 255)<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>And as <span class="nt">&lt;em&gt;</span>hsl(210, 100%, 56%)<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>This has an <span class="nt">&lt;em&gt;</span>alpha<span class="nt">&lt;/em&gt;</span> (transparency) value in the color.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>Same for this one.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>This uses a separate <span class="nt">&lt;em&gt;</span>opacity<span class="nt">&lt;/em&gt;</span> property.<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;li&gt;</span>All of these work for backgrounds, too!<span class="nt">&lt;/li&gt;</span>
+
+</code></pre></div></div>
+</div>
+<div class="example">
+<li>This paragraph will be <em>dodgerblue</em>.</li>
+<li>Which can also be written as <em>#1e90ff</em>.</li>
+<li>Or as <em>rgb(30, 144, 255)</em>.</li>
+<li>And as <em>hsl(210, 100%, 56%)</em>.</li>
+<li>This has an <em>alpha</em> (transparency) value in the color.</li>
+<li>Same for this one.</li>
+<li>This uses a separate <em>opacity</em> property.</li>
+<li>All of these work for backgrounds, too!</li>
+</div>
+
+    </main>
+  </body>
+
+</html>

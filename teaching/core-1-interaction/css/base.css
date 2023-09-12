@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   --black: #000000;
   --gray: #dddddd;
@@ -8,6 +12,15 @@ body {
   background-color: var(--white);
   font-family: arial, sans-serif;
   margin: 0;
+}
+
+figure:has(iframe) {
+  margin: 0;
+  padding: 0;
+  width: 90vw;
+}
+figure:has(iframe) iframe {
+  height: var(--height--max);
 }
 
 /*# sourceMappingURL=base.css.map */

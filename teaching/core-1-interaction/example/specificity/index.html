@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/example.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main class="main main--example">
+      
+<div class="code">
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Will “win” over an element selector. */</span>
+<span class="nc">.maroon</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">maroon</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* But IDs will supersede classes. */</span>
+<span class="nf">#intro</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#warning</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">teal</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;p&gt;</span>This paragraph will be red, from the <span class="nt">&lt;em&gt;</span>element<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"maroon"</span><span class="nt">&gt;</span>This paragraph will be maroon, from the <span class="nt">&lt;em&gt;</span>class<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>This paragraph will be red again, no <span class="nt">&lt;em&gt;</span>class<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"maroon"</span> <span class="na">id=</span><span class="s">"intro"</span><span class="nt">&gt;</span>This heading will be blue, from the <span class="nt">&lt;em&gt;</span>ID<span class="nt">&lt;/em&gt;</span>, even though it has the <span class="nt">&lt;em&gt;</span>class<span class="nt">&lt;/em&gt;</span> too<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"warning"</span><span class="nt">&gt;</span>This paragraph will be teal, from the <span class="nt">&lt;em&gt;</span>ID<span class="nt">&lt;/em&gt;</span>, beating the <span class="nt">&lt;em&gt;</span>element<span class="nt">&lt;/em&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"maroon"</span> <span class="na">style=</span><span class="s">"color: gray;"</span><span class="nt">&gt;</span>This paragraph will be gray, from an <span class="nt">&lt;em&gt;</span>inline style<span class="nt">&lt;/em&gt;</span>, which beats everything.<span class="nt">&lt;/p&gt;</span>
+
+</code></pre></div></div>
+</div>
+<div class="example">
+<p>This paragraph will be red, from the <em>element</em>.</p>
+<p class="maroon">This paragraph will be maroon, from the <em>class</em>.</p>
+<p>This paragraph will be red again, no <em>class</em>.</p>
+<h2 class="maroon" id="intro">This heading will be blue, from the <em>ID</em>, even though it has the <em>class</em> too</h2>
+<p id="warning">This paragraph will be teal, from the <em>ID</em>, beating the <em>element</em>.</p>
+<p class="maroon" style="color: gray;">This paragraph will be gray, from an <em>inline style</em>, which beats everything.</p>
+</div>
+
+    </main>
+  </body>
+
+</html>
