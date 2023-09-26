@@ -1,0 +1,13 @@
+.example * {
+  box-sizing: border-box;
+}
+
+.example section {
+  background-color: pink;
+  padding: 20px;
+}
+
+.example div {
+  background-color: green;
+  padding: 10px;
+}

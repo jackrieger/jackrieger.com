@@ -192,10 +192,10 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>Even though it is used to style HTML elements, the syntax of CSS is very different. CSS <em>rules</em> are made up of <em>selectors</em>, used to target certain elements, and then the <em>declarations</em> that you want to apply to them:</p>
 
 <figure>
-	
-		<img src="rule.svg" />
-	
-	
+  
+    <img src="rule.svg" />
+  
+  
 </figure>
 
 <p>The curly brackets <code class="language-plaintext highlighter-rouge">{</code> <code class="language-plaintext highlighter-rouge">}</code> (also known as <em>mustaches</em> or <em>handlebars</em>, for their shape) enclose all the declarations you want to apply to a given selector. These <em>declarations</em> are in turn made up of <em>properties</em> and <em>values</em>.</p>
@@ -284,13 +284,13 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>You can then use a <code class="language-plaintext highlighter-rouge">class</code> to <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors">target specific instances</a>. They are added as an <em><a href="/topic/html/#attributes">attribute</a></em> on the element you want to target:</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/moby"></iframe>
-		</div>
-		
-	
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/moby"></iframe>
+    </div>
+    
+  
+  
 </figure>
 
 <p>The <em>value</em> here is our class name, which we write in CSS by prefixing with a <code class="language-plaintext highlighter-rouge">.</code> as with <code class="language-plaintext highlighter-rouge">.highlight</code>.</p>
@@ -304,13 +304,13 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>You can use the various <a href="topic/html/#attributes">attributes</a> as selectors, too. These are usually very similar to using <em>classes</em>, but can help you <a href="https://css-tricks.com/attribute-selectors/">differentiate things</a> like internal and external links, for example:</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/attribute"></iframe>
-		</div>
-		
-	
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/attribute"></iframe>
+    </div>
+    
+  
+  
 </figure>
 
 <h3 id="pseudo-classes">Pseudo-classes</h3>
@@ -318,27 +318,27 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>These are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">special selectors</a>, added to <code class="language-plaintext highlighter-rouge">element</code>, <code class="language-plaintext highlighter-rouge">class</code>, or <code class="language-plaintext highlighter-rouge">id</code> which target unique <em>states</em> or <em>instances</em> of HTML elements. You’ll often see these used to target <a href="https://web.dev/learn/css/pseudo-classes/#historic-states">link states</a>:</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/pseudo-link"></iframe>
-		</div>
-		
-	
-	
-		<figcaption><code class="language-plaintext highlighter-rouge">:hover</code> also works on any element, not just links!</figcaption>
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/pseudo-link"></iframe>
+    </div>
+    
+  
+  
+    <figcaption><code class="language-plaintext highlighter-rouge">:hover</code> also works on any element, not just links!</figcaption>
+  
 </figure>
 
 <p>Other common examples have to do with <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#tree-structural_pseudo-classes">counts and positions</a>:</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/pseudo-child"></iframe>
-		</div>
-		
-	
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/pseudo-child"></iframe>
+    </div>
+    
+  
+  
 </figure>
 
 <h3 id="pseudo-elements">Pseudo-elements</h3>
@@ -346,13 +346,13 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>Slightly different the various <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements">pseudo-<em>elements</em></a>, which let you style a particular <em>part</em> of an element. You’ll most often see these as <code class="language-plaintext highlighter-rouge">:before</code> and <code class="language-plaintext highlighter-rouge">:after</code>, which let us insert things around text.</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/pseudo-element"></iframe>
-		</div>
-		
-	
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/pseudo-element"></iframe>
+    </div>
+    
+  
+  
 </figure>
 
 <h3 id="finally-combinators">Finally, combinators</h3>
@@ -360,13 +360,13 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>Last, you will often want to target something based on its relationship to other elements—its <em>siblings</em> or its <em>parents</em>. For this, CSS has <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators"><em>combinators</em></a>, which let you relate all the various selectors we’ve learned about here together.</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/combinator"></iframe>
-		</div>
-		
-	
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/combinator"></iframe>
+    </div>
+    
+  
+  
 </figure>
 
 <p>Importantly, combinators can only “see” elements <em>before</em> and <em>above</em> themselves—meaning their <em>previous <em>(older?)</em> siblings</em> or their <em>parents</em>. This directionality somewhat corresponds with the <em>cascade</em>, which we’ll talk about shortly.</p>
@@ -391,13 +391,13 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>The first three targeting methods (<code class="language-plaintext highlighter-rouge">element</code>, <code class="language-plaintext highlighter-rouge">.class</code>, <code class="language-plaintext highlighter-rouge">#id</code>) are listed in increasing order of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"><em>specificity</em></a>, meaning that a class trumps an element rule, and an ID trumps a class. IDs are thus <em>more specific</em> than classes, which are <em>more specific</em> than element selectors. (And you shouldn’t really use them, but inline styles beat them all.) Take this example:</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/specificity"></iframe>
-		</div>
-		
-	
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/specificity"></iframe>
+    </div>
+    
+  
+  
 </figure>
 
 <p>You could write a <em>long</em> book (and many people have) about CSS specificity—the myriad of ways that some CSS rules take precedent over others. It is often one the more frustrating parts (especially when working with legacy code that is poorly considered). Suffice it to say <em>it’s complicated</em>.</p>
@@ -409,13 +409,13 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>We haven’t even talked about that first <em>C</em>! Remember, it stands for <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade"><em>cascading</em></a>. This means that when there is a tie (like two classes applying the same property), the <em>lowest</em> rule wins—literally the one further down within a CSS document, or within a style tag. If you have multiple CSS documents with <code class="language-plaintext highlighter-rouge">&lt;link&gt;</code> element, the lower linked document will take precedence.</p>
 
 <figure style="--height--max: 20rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/cascade"></iframe>
-		</div>
-		
-	
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/cascade"></iframe>
+    </div>
+    
+  
+  
 </figure>
 
 <h2 id="and-inheritance">And inheritance</h2>
@@ -425,13 +425,13 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>This allows you to quickly set some properties globally, without having many brittle/redundant rules, as we did before:</p>
 
 <figure style="--height--max: 20rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/inheritance"></iframe>
-		</div>
-		
-	
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/inheritance"></iframe>
+    </div>
+    
+  
+  
 </figure>
 
 <p>All the children inherit the <code class="language-plaintext highlighter-rouge">body</code> styles.</p>
@@ -445,15 +445,15 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>Besides the basic examples above, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"><em>color</em></a> can be specified in a few different ways:</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/color"></iframe>
-		</div>
-		
-	
-	
-		<figcaption>There are <a href="https://htmlcolorcodes.com/color-names/">147 <em>named</em></a> CSS colors! <code class="language-plaintext highlighter-rouge">tomato</code> is a favorite.</figcaption>
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/color"></iframe>
+    </div>
+    
+  
+  
+    <figcaption>There are <a href="https://htmlcolorcodes.com/color-names/">147 <em>named</em></a> CSS colors! <code class="language-plaintext highlighter-rouge">tomato</code> is a favorite.</figcaption>
+  
 </figure>
 
 <p>Named colors are quick to work with when you know a few, but <code class="language-plaintext highlighter-rouge">hsla</code> offers a more intuitive way to adjust and work with colors.</p>
@@ -465,15 +465,15 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>Then perhaps most importantly, you’ll always be customizing your <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals">typography</a>. Remember, the web is text <em>all the way down</em>:</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/font-family"></iframe>
-		</div>
-		
-	
-	
-		<figcaption>With great power comes great responsibility.</figcaption>
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/font-family"></iframe>
+    </div>
+    
+  
+  
+    <figcaption>With great power comes great responsibility.</figcaption>
+  
 </figure>
 
 <p>Web font licensing is a <em>Whole Big Thing</em>—so let’s start out by making use of <a href="https://www.w3schools.com/cssref/css_websafe_fonts.php">web-safe fonts</a> or <a href="https://fonts.google.com">Google Fonts</a>, which offers many <em>open-source</em> typefaces nicely packaged for web use. You can select <em>families</em> and <em>weights</em> there to easily include in your pages, as in the example above.</p>
@@ -483,15 +483,15 @@ with <a href="https://www.laurel.world/">Laurel Schwulst</a></p>
 <p>Once you’ve got a <code class="language-plaintext highlighter-rouge">font-family</code> in, there are additional properties to control the typography:</p>
 
 <figure style="--height--max: 30rem">
-	
-		<div>
-			<iframe allowfullscreen="" src="/teaching/core-1-interaction//example/font"></iframe>
-		</div>
-		
-	
-	
-		<figcaption>For now, you can just specify units in <code class="language-plaintext highlighter-rouge">px</code> to match Figma. We’ll talk about other <em>absolute</em> and <em>relative</em> units soon.</figcaption>
-	
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/font"></iframe>
+    </div>
+    
+  
+  
+    <figcaption>For now, you can just specify units in <code class="language-plaintext highlighter-rouge">px</code> to match Figma. We’ll talk about other <em>absolute</em> and <em>relative</em> units soon.</figcaption>
+  
 </figure>
 
 <h2 id="best-practices">Best practices</h2>

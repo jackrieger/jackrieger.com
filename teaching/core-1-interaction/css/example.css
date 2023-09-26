@@ -14,9 +14,19 @@ body {
   border-radius: unset;
 }
 
+.code {
+  background-color: #999;
+}
 .code .highlight {
   border-radius: unset;
+  margin-bottom: 15px;
+}
+.code .language-html {
+  margin-top: 15px;
+}
+.code .language-html .highlight {
   margin-bottom: unset;
+  margin-top: unset;
 }
 
 .example {

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/example.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main class="main main--example">
+      
+<div class="code">
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">deepskyblue</span><span class="p">;</span>
+  <span class="nl">border-top</span><span class="p">:</span> <span class="nb">solid</span> <span class="no">black</span> <span class="m">4px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:first-child</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:first-child</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">gold</span><span class="p">;</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nd">:nth-child</span><span class="o">(</span><span class="err">2</span><span class="o">)</span> <span class="nt">p</span><span class="nd">:not</span><span class="o">(</span><span class="nd">:first-child</span><span class="o">)</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span>
+  <span class="nl">margin-top</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">white-space</span><span class="p">:</span> <span class="n">pre</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;section&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This is some text in the first element.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Paragraphs are normally block-level.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>And some more in the second element.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span> Inline-block <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span> will give <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span> you more <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span> control <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Then a third one, too.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+
+</code></pre></div></div>
+</div>
+<div class="example">
+<section>
+  <div>
+    <p>This is some text in the first element.</p>
+    <p>Paragraphs are normally block-level.</p>
+  </div>
+  <div>
+    <p>And some more in the second element.</p>
+    <p> Inline-block </p>
+    <p> will give </p>
+    <p> you more </p>
+    <p> control </p>
+  </div>
+  <div>
+    <p>Then a third one, too.</p>
+  </div>
+</section>
+</div>
+
+    </main>
+  </body>
+
+</html>

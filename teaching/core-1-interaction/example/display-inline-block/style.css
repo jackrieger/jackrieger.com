@@ -1,0 +1,23 @@
+.example div {
+  background-color: deepskyblue;
+  border-top: solid black 4px;
+  padding: 10px;
+}
+
+.example div:not(:first-child) {
+  margin-top: 20px;
+}
+
+.example p:not(:first-child) {
+  background-color: gold;
+  margin-top: 10px;
+}
+
+.example div:nth-child(2) p:not(:first-child) {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px;
+  text-align: center;
+  white-space: pre;
+  width: 100px;
+}
