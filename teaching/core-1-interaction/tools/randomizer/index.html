@@ -64,8 +64,8 @@
     <main class="main">
       <h1></h1>
       <hr>
-      <h1>Selected Students:</h1>
-<ul id="selected-students"></ul>
+      <h1 id="selected-students"></h1>
+
 <button onclick="randomizer.selectStudents()">Select Students</button>
 
 <script>
@@ -99,10 +99,10 @@
       this.selectedStudents.push(student1, student2);
 
       // Display the selected students on the HTML page
-      const listItem = document.createElement("li");
-      listItem.textContent = `${student1} and ${student2}`;
+      const item = document.createElement("h1");
+      item.textContent = `${student1} and ${student2}`;
       this.displayElement.innerHTML = "";
-      this.displayElement.appendChild(listItem);
+      this.displayElement.appendChild(item);
 
       return [student1, student2];
     }
