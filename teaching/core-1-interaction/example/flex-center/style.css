@@ -1,0 +1,14 @@
+.example .container-1 {
+  align-items: center;
+  background-color: springgreen;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+
+.example .element {
+  background-color: magenta;
+  height: 100px;
+  width: 100px;
+}

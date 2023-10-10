@@ -1,0 +1,30 @@
+.example .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  /* not related to grid */
+  background-color: orange;
+  font-family: sans-serif;
+  margin-bottom: 25px;
+  min-height: 200px;
+}
+
+.example .column-2 {
+  grid-column: span 2;
+}
+
+.example .column-4 {
+  grid-column: span 4;
+}
+
+.example .column-6 {
+  grid-column: span 6;
+}
+
+.example .border {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}

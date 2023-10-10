@@ -1,0 +1,43 @@
+.example .grid {
+  background-color: #dddddd;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-height: 300px;
+}
+
+.example .column-6 {
+  grid-column: span 6;
+}
+
+.example .flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.example .flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example .frame {
+  background-color: gold;
+  height: 100px;
+  width: 100%;
+}
+
+.example .circle {
+  background-color: coral;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.example .square {
+  background-color: cyan;
+  height: 50px;
+  width: 50px;
+}
