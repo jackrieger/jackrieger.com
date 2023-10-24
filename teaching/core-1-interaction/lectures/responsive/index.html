@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="description" content=""> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Responsiveness</title>
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/reset.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/tags.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/base.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/nav.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/default.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/buttons.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/pixel.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__left">
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/">
+            Core 1: Interaction
+          </a>
+        </span>
+      </div>
+      <div class="nav__right">
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/sessions">
+            Sessions
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/lectures">
+            Lectures
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/project">
+            Project
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/library">
+            Library
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/references">
+            References
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/students">
+            Students
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/colophon">
+            Colophon
+          </a>
+        </span>
+      </div>
+    </nav>
+    <main class="main">
+      <h1>Responsiveness</h1>
+      <hr>
+      <p>Responsiveness in CSS refers to a website’s ability to adapt to various screen sizes and devices. It is achieved through a combination of flexible layout techniques, media queries, and design decisions.</p>
+
+<p>One key aspect of responsiveness is fluid grids, which we’ve gone over in a previous lecture. Another technique is using relative units like percentages and ems to create layouts that expand or contract based on the available screen real estate (which we’ve also discussed). This ensures that content flows and restructures itself gracefully, maintaining a great design regardless of the device’s width.</p>
+
+<h2 id="media-queries">Media queries</h2>
+
+<p>Media queries are another critical component of responsive design. They allow designers and developers to set specific CSS rules for different screen sizes or device characteristics, such as width, height, or orientation. By tailoring styles to different breakpoints, we can optimize the user experience on everything from small mobile screens to large desktop monitors.</p>
+
+<p>It’s quite simple to implement in your code:</p>
+
+<figure style="--height--max: 25rem">
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/breakpoint"></iframe>
+    </div>
+    
+  
+  
+</figure>
+
+<p>There are <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries">many different device aspects you can target</a>, but the main ones to know are <code class="language-plaintext highlighter-rouge">min-width</code> and <code class="language-plaintext highlighter-rouge">max-width</code>.</p>
+
+<p>A common strategy I use is to include the breakpoint blocks at the end of the file in which they are referencing, e.g. in a stylesheet for a nav, at the bottom would come the breakpoints:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* style/nav.css */</span>
+
+<span class="nt">nav</span> <span class="p">{</span>
+  <span class="c">/* … */</span>
+<span class="p">}</span>
+
+<span class="c">/* rest of base styles … */</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">400px</span> <span class="n">and</span> <span class="n">max-width</span><span class="p">:</span> <span class="m">1159px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c">/* edits needed for medium screens */</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1200px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c">/* edits needed for large screens */</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="mobile-first">Mobile-first</h2>
+
+<p>The “Mobile-First” philosophy is an approach that prioritizes creating websites and applications for mobile devices before addressing larger screens. This philosophy has gained prominence due to the widespread use of smartphones and the increasing importance of mobile internet access.</p>
+
+<p>It’s a great idea in theory but in practice, many designers I’ve worked with start from desktop designs. It’s something to keep in mind but decide for yourself how to think about it. A lot depends on the context of the website and its function, as well as your own aesthetic taste.</p>
+
+<p>If you’re writing stylesheets in a mobile-first manner, the base of your file would be everything as-is at mobile, and your breakpoints would scale up from there.</p>
+
+<figure style="--height--max: 25rem">
+  
+    <div>
+      <iframe allowfullscreen="" src="/teaching/core-1-interaction//example/mobile-first"></iframe>
+    </div>
+    
+  
+  
+</figure>
+
+<h2 id="common-screen-sizes--a-myth">Common Screen Sizes – A Myth</h2>
+
+<p>You might be wondering what the most “common” screen sizes to use for breakpoints. The answer is, it depends on your design! See what happens at various screen sizes and adjust from there. Pre-plan out your breakpoints while you’re designing.</p>
+
+<p>The problem with using “common device widths” is that devices change all the time. Think how much just the iPhone has changed, and the variety of iPhone sizes available now. It would be a waste to design for a particular device like that.</p>
+
+<p>Think more generally about screen widths. An example I can give you might be:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Small   0–499px
+Medium  500–1399px
+Large   1400+px
+</code></pre></div></div>
+
+<p>But again, it depends on the design. Some sites have two breakpoints, some have five or more.</p>
+
+    </main>
+    <div class="top-button js-top-button">
+      ↑
+    </div>
+    <div class="pixel-button js-pixel-button">
+      *
+    </div>
+    <div class="css-button js-css-button">
+      CSS
+    </div>
+    <script src="/teaching/core-1-interaction/js/top_button.js"></script>
+    <script src="/teaching/core-1-interaction/js/pixel.js"></script>
+    <script src="/teaching/core-1-interaction/js/css_button.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.example div {
+  font-family: arial;
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/*
+  font-family doesn't need to change, so we don't write anything
+  font-size, margin size, and width commonly change:
+*/
+@media (min-width: 800px) {
+  .example div {
+    font-size: 30px;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+}

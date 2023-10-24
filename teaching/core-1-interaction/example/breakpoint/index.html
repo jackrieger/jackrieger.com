@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/example.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <main class="main main--example">
+      
+<div class="code">
+  
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="no">lightblue</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Screens 500px wide or more */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">500px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="no">lightcoral</span><span class="p">;</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;div&gt;</span>
+  Content to show you what happens as the screen changes width.
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div&gt;</span>
+  This is a very common occurence in which content meant to be partial width at desktop becomes full-width at mobile.
+<span class="nt">&lt;/div&gt;</span>
+
+</code></pre></div></div>
+
+</div>
+<div class="example">
+  
+<div>
+  Content to show you what happens as the screen changes width.
+</div>
+
+<div>
+  This is a very common occurence in which content meant to be partial width at desktop becomes full-width at mobile.
+</div>
+
+</div>
+
+    </main>
+  </body>
+
+</html>
