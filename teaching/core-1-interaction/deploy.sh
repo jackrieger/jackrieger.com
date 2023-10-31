@@ -1,12 +1,40 @@
-# Step 1: Navigate to the Jekyll site and build it
-# cd /path/to/second-website # not necessary if run inside root folder
+# Step 0: Commit changes in the Jekyll website's repository
+
+# cd /path/to/jekyll-website # only necessary if script is not in the Jekyll website's directory
+# if [ $? -ne 0 ]; then
+#   echo "Navigation to Jekyll repository failed."
+#   exit 1
+# fi
+
+git add .
+if [ $? -ne 0 ]; then
+  echo "Git add operation for Jekyll website failed."
+  exit 1
+fi
+
+# Prompt for commit message
+read -p "Enter commit message: " commitMessage
+
+git commit -m "$commitMessage"
+if [ $? -ne 0 ]; then
+  echo "Git commit for Jekyll website failed."
+  exit 1
+fi
+
+git push
+if [ $? -ne 0 ]; then
+  echo "Git push for Jekyll website failed."
+  exit 1
+fi
+
+# Step 1: Build the Jekyll website
 bundle exec jekyll build
 if [ $? -ne 0 ]; then
   echo "Jekyll build failed."
   exit 1
 fi
 
-# Step 2: Copy the '_site' directory to the target folder in the first website's repository
+# Step 2: Copy the '_site' directory to the target folder in the main website's repository
 cp -r _site/* /Users/jack/Documents/website/jackrieger.com/teaching/core-1-interaction
 if [ $? -ne 0 ]; then
   echo "Copy operation failed."
@@ -26,9 +54,7 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-# Prompt for commit message
-read -p "Enter commit message: " commitMessage
-
+# Reuse the commit message from above
 git commit -m "$commitMessage"
 if [ $? -ne 0 ]; then
   echo "Git commit failed."
