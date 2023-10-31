@@ -16,6 +16,28 @@ font-family: menlo, monospace; // font
 padding: 0.25em;
 */
 /* HTML/CSS/JS only rouge declarations */
+.kd,
+.kc {
+  color: #649ad1;
+}
+
+.nx {
+  color: #a7d9f9;
+}
+
+.dl,
+.s2 {
+  color: #c3ad7c;
+}
+
+.mi {
+  color: #bacdab;
+}
+
+.k {
+  color: #649ad1;
+}
+
 /* Default text color and background color */
 .highlight,
 .highlight .w {
