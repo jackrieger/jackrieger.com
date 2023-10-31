@@ -64,34 +64,59 @@
     <main class="main">
       <h1></h1>
       <hr>
-      <h2 id="net-art">Net Art</h2>
-
-<p>Net Art Anthology</p>
-
-<p>https://veryinteractive.net/pages/coding-from-life.html</p>
-
-<p>reading discussion
-https://veryinteractive.net/pages/coding-from-life.html</p>
-
-<p>show important websites (public browsing)</p>
-
-<p>carousel</p>
-
-<p>bouncing ball js</p>
-
-<p>chris handwritten tags (earlier in semester)</p>
-
-<p>responsiveness lecture</p>
-
-<p>Recreate albers/mondrian/other (or coding from life?)</p>
-
-<h2 id="a-graphic-design-reading-list">A Graphic Design Reading List</h2>
-
-<p>https://www.varvvarv.eu/a-graphic-design-reading-list</p>
-
-<p>P5 coding train</p>
+      <p>Next semester</p>
+<ul>
+  <li>chris handwritten tags exercise (earlier in semester)</li>
+  <li>https://veryinteractive.net/pages/coding-from-life.html</li>
+</ul>
 
 <hr />
+
+<p>JS</p>
+<ul>
+  <li>carousel</li>
+  <li>bouncing ball js</li>
+  <li>P5 coding train</li>
+</ul>
+
+<p>Better practices</p>
+<ul>
+  <li>Use CSS grid (nobody really grasped the purpose of the grid lecture)</li>
+  <li>Use CSS variables
+    <ul>
+      <li>mixins</li>
+      <li>space variables</li>
+      <li>colors</li>
+    </ul>
+  </li>
+  <li>Componentization/templating
+    <ul>
+      <li>Sharing CSS files</li>
+      <li>Include header/footer with AJAX
+```javascript
+fetch(“./header.html”)
+.then(response =&gt; {
+  return response.text()
+})
+.then(data =&gt; {
+  document.querySelector(“header”).innerHTML = data;
+});</li>
+    </ul>
+
+    <p>fetch(“./footer.html”)
+  .then(response =&gt; {
+    return response.text()
+  })
+  .then(data =&gt; {
+    document.querySelector(“footer”).innerHTML = data;
+  });
+```</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>Whole sections</p>
 
 <h2 id="activity-website-examination">Activity: Website Examination</h2>
 

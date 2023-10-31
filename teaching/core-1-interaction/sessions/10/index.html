@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="description" content=""> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Session 10</title>
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/reset.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/tags.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/base.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/nav.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/default.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/buttons.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/pixel.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__left">
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/">
+            Core 1: Interaction
+          </a>
+        </span>
+      </div>
+      <div class="nav__right">
+        <span class="nav__link-span active">
+          <a class="nav__link" href="/teaching/core-1-interaction/sessions">
+            Sessions
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/lectures">
+            Lectures
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/project">
+            Project
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/library">
+            Library
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/references">
+            References
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/students">
+            Students
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/colophon">
+            Colophon
+          </a>
+        </span>
+      </div>
+    </nav>
+    <main class="main">
+      <h1>Session 10</h1>
+      <hr>
+      <div class="marquee-container">
+  <div class="marquee-content js-marquee">
+    🎃 👻 🦇 🕸️ 🕷️ 🧙‍♀️ 🧙‍♂️ 🧹 🧛‍♀️ 🧛‍♂️ 🧟‍♀️ 🧟‍♂️ 🍬 🍭 🔮 ⚰️ ⛓️ 👹 👺 💀 👽 🌕 🌑 🕯️ 🦉 🍎 🔪 🗡️
+  </div>
+</div>
+
+<style>
+  .marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .marquee-content {
+    animation: marquee 15s linear infinite;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const emojis = ["🎃", "👻", "🦇", "🕸️", "🕷️", "🧙‍♀️", "🧙‍♂️", "🧹", "🧛‍♀️", "🧛‍♂️", "🧟‍♀️", "🧟‍♂️", "🍬", "🍭", "🔮", "⚰️", "⛓️", "👹", "👺", "💀", "👽", "🌕", "🌑", "🕯️", "🦉", "🍎"];
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    shuffle(emojis);
+    const shuffledEmojis = emojis.join(" ");
+    const marquee = document.querySelector(".js-marquee");
+    marquee.innerHTML = shuffledEmojis + " " + shuffledEmojis;
+  });
+</script>
+
+<h2 id="live-websites">Live websites</h2>
+
+<p>By next week you must have a GitHub Pages website with a homepage that correctly links to all of your entries. The entries must all be up-to-date. I will no longer be accepting entries via file or email.</p>
+
+<p>The homepage must be an <code class="language-plaintext highlighter-rouge">index.html</code> file at the root of your site. This means the URL to your site will be very clean, like this:</p>
+
+<p><a href="https://jackrieger.github.io/harmonic-collection">https://jackrieger.github.io/harmonic-collection</a></p>
+
+<p>Here is the code inside this repository, for reference. (Note that this is the link to my code, not my website. This is <em>not</em> the kind of URL I’m looking for for submissions):</p>
+
+<p><a href="https://github.com/jackrieger/harmonic-collection">https://github.com/jackrieger/harmonic-collection</a></p>
+
+<p>Here are some resources for git made by other teachers of this class:</p>
+
+<p>Sasha Portis <br />
+<a href="https://docs.google.com/document/d/1JXnVRInA5A-XAY4mQewIMYUETI8UOo5eD_RxCKbKfsE">Setting up your Harmonic Collection website on Github</a></p>
+
+<p>Zach Scheinfeld <br />
+<a href="https://www.loom.com/share/36e1a85f88dc49ae964508f8245f4939">Creating a New Repository on Github</a> <br />
+<a href="https://www.loom.com/share/900c2c5b294a445192b705ce2b9578f0">Generating a Repository Link on Github Pages</a></p>
+
+<h2 id="office-hours">Office hours</h2>
+
+<p>I will hold office hours this Sunday. Talk to me after class if you are interested, and we can find a time.</p>
+
+<h2 id="net-art">Net Art</h2>
+
+<p>Last week we talked about more design-oriented sites. This week I want to introduce net art, if you’re unfamiliar.</p>
+
+<blockquote>
+  <p>Net art is a form of digital art that emerged in the late 1990s, using the internet both as its canvas and its distribution platform. Encompassing a wide range of artistic practices—from interactive web experiences to social media interventions—net art challenges traditional concepts of art-making and consumption. It is inherently democratic, often inviting user participation and collaboration, while questioning the norms of the digital space it inhabits. Pioneers in the field like JODI and Neen have helped shape the language of net art, pushing the boundaries of what is considered ‘art’ by incorporating elements like code, interface design, and digital interactivity.<span> — GPT-4<span></span></span></p>
+</blockquote>
+
+<p>Starting in 2016, the organization Rhizome began to assemble the Net Art Anthology, a collection of 100 works that exemplifies the genre:</p>
+
+<p><a href="https://anthology.rhizome.org/">Net Art Anthology</a></p>
+
+<blockquote>
+  <p>Devised in concert with Rhizome’s acclaimed digital preservation department, Net Art Anthology aims to address the shortage of historical perspectives on a field in which even the most prominent artworks are often inaccessible. The series takes on the complex task of identifying, preserving, and presenting 100 exemplary works in a field characterized by broad participation, diverse practices, promiscuous collaboration, and rapidly shifting formal and aesthetic standards, sketching a possible net art canon.<span> — Rhizome<span></span></span></p>
+</blockquote>
+
+<p>Spend 15 minutes browsing the collection and select a work you want to discuss as a group. Try to not look at the commentary from Rhizome, but instead focus on what you personally see in the work. Add it here, following the format listed at the top of the document:</p>
+
+<p><a href="https://docs.google.com/document/d/15kKUthxtmj0kBmt0FjAnJA20r5wvZXndjp6ebiqwKRo/edit?usp=sharing">Net Art Works</a></p>
+
+<h2 id="break">Break</h2>
+
+<h2 id="lecture">Lecture</h2>
+
+<p><a href="/teaching/core-1-interaction/lectures/intro-to-javascript">Intro to JavaScript</a></p>
+
+<h2 id="for-next-class">For next class</h2>
+
+<p>Your homework is an entry that uses JavaScript in some way.</p>
+
+<p>We will have presentations of your sites next week! Be prepared to share.</p>
+
+    </main>
+    <div class="top-button js-top-button">
+      ↑
+    </div>
+    <div class="pixel-button js-pixel-button">
+      *
+    </div>
+    <div class="css-button js-css-button">
+      CSS
+    </div>
+    <script src="/teaching/core-1-interaction/js/top_button.js"></script>
+    <script src="/teaching/core-1-interaction/js/pixel.js"></script>
+    <script src="/teaching/core-1-interaction/js/css_button.js"></script>
+  </body>
+</html>
