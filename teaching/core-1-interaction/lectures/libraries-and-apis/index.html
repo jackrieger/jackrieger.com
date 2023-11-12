@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta name="description" content=""> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Libraries and APIs</title>
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/reset.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/syntax.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/tags.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/base.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/nav.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/default.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/buttons.css">
+    <link rel="stylesheet" href="/teaching/core-1-interaction/css/pixel.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__left">
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/">
+            Core 1: Interaction
+          </a>
+        </span>
+      </div>
+      <div class="nav__right">
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/sessions">
+            Sessions
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/lectures">
+            Lectures
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/project">
+            Project
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/library">
+            Library
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/references">
+            References
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/students">
+            Students
+          </a>
+        </span>
+        <span class="nav__link-span ">
+          <a class="nav__link" href="/teaching/core-1-interaction/colophon">
+            Colophon
+          </a>
+        </span>
+      </div>
+    </nav>
+    <main class="main">
+      <h1>Libraries and APIs</h1>
+      <hr>
+      <h2 id="libraries">Libraries</h2>
+
+<p>You’ve written your own functions and used built-in functions by using Web APIs (things like <code class="language-plaintext highlighter-rouge">addEventListener</code>, <code class="language-plaintext highlighter-rouge">querySelector</code>, … we’ll talk about APIs in a bit).</p>
+
+<p>Now imagine that you want to use functionality that someone else wrote. You could copy and paste their code into your own file, but that’s not very efficient. Instead, you can use a library.</p>
+
+<p>A library is a collection of code that someone else wrote that you can use in your own code. Libraries are usually written by other developers and are made available for free. They can be used to add functionality to your website, like adding a carousel or a map, or to make your code easier to write, like using a library to make an HTTP request.</p>
+
+<h2 id="libraries-for-designers--artists">Libraries for designers &amp; artists</h2>
+
+<p>For our context, there are four libraries that I want to highlight:</p>
+
+<h3 id="flickity">Flickity</h3>
+
+<p><a href="https://flickity.metafizzy.co/">flickity.metafizzy.co</a></p>
+
+<p>Flickity is a touch-friendly, responsive carousel library. It’s designed to create sliders that work well on desktop, tablets, and mobiles with easy-to-use features for scrolling through items:</p>
+
+<figure>
+  
+    <img src="flickity-example.png" />
+  
+  
+    <figcaption>You’ve used a ton of these throughout your digital lives.</figcaption>
+  
+</figure>
+
+<p>The official starter example on <a href="https://codepen.io/desandro/pen/azqbop">Codepen</a>. Note that here they’re including the library from a CDN (more details on that in the <a href="#how-to-import-a-library-into-your-project">next section below</a>:</p>
+
+<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="azqbop" data-user="desandro" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/desandro/pen/azqbop">
+  Flickity</a> by Dave DeSandro (<a href="https://codepen.io/desandro">@desandro</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async="" src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+<h3 id="p5js">p5.js</h3>
+
+<p><a href="https://p5js.org/">p5js.org</a></p>
+
+<p>TK</p>
+
+<!--
+p5.js is a library that brings the power and simplicity of Processing (a programming language and environment for artists) to JavaScript, making creative coding accessible to a broader audience. It is excellent for creating graphic and interactive experiences, based on the core principles of Processing.
+
+Verbal Example:
+Let's say you want to create an educational web application that helps teach the concept of gravity. Using p5.js, you could create an interactive simulation where users can drop balls of different masses and see how they fall and bounce, visually learning about gravitational force and its effects on different objects.
+-->
+
+<h3 id="threejs">Three.js</h3>
+
+<p><a href="https://threejs.org/">threejs.org</a></p>
+
+<p>TK</p>
+
+<!--
+Three.js is a 3D library that simplifies the process of creating 3D graphics on the web using WebGL. It abstracts away the complexity of WebGL, giving developers the ability to create impressive 3D scenes, animations, and effects with a more manageable set of APIs.
+
+Verbal Example:
+Imagine you're developing a website for a new housing development and you want to provide a virtual tour of the houses. With Three.js, you could build an interactive 3D model of a house that users can "walk through" by clicking and dragging their mouse to look around, experiencing the space as if they were there in person.
+-->
+
+<h3 id="d3js">D3.js</h3>
+
+<p><a href="https://d3js.org/">d3js.org</a></p>
+
+<p>TK</p>
+
+<!--
+D3.js is a powerful library for creating complex and dynamic data visualizations in the web browser. It uses HTML, SVG, and CSS, and gives you the tools to bind data to the DOM and apply transformations to the document based on that data.
+
+Verbal Example:
+Consider a financial website that wants to display stock prices in real-time. Using D3.js, you could create a line chart that updates every few seconds, reflecting the latest prices. As new data arrives, the chart could transition smoothly, moving the existing line to the left and appending the new data to the right.
+-->
+
+<h2 id="how-to-import-a-library-into-your-project">How to import a library into your project</h2>
+
+<p>Every library will have its own instructions for how to use it. But in general, you’ll need to do three things:</p>
+
+<ol>
+  <li>Download the library, or link to it from a CDN</li>
+  <li>Link to the library in your HTML file</li>
+  <li>Write code that uses the library</li>
+</ol>
+
+<h3 id="download-the-library-or-link-to-it-from-a-cdn">Download the library, or link to it from a CDN</h3>
+
+<p>You can download the library from the library’s website. For example, you can download Flickity from <a href="https://flickity.metafizzy.co/">flickity.metafizzy.co/</a>. You’ll get a zip file that you can unzip and put in your project folder.</p>
+
+<p>Alternatively, you can link to the library from a CDN (Content Delivery Network). A CDN is a collection of servers distributed across the globe that store copies of files. When you link to a file on a CDN, the file is downloaded from the server closest to you. This makes your website load faster and saves bandwidth on your server.</p>
+
+<h3 id="link-to-the-library-in-your-html-file">Link to the library in your HTML file</h3>
+
+<p>You’ll need to link to the library in your HTML file. You can do this by adding a <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> tag to the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> of your HTML file. The <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code> tag should have a <code class="language-plaintext highlighter-rouge">src</code> attribute that points to the library file. For example, if you downloaded Flickity and put it in a folder called <code class="language-plaintext highlighter-rouge">flickity</code> in your project folder, you would add this to your HTML file:</p>
+
+<p>EXAMPLE TK</p>
+
+<h2 id="each-of-the-libraries-instruction-pages">Each of the libraries instruction pages</h2>
+
+<p>Flickity:
+…</p>
+
+<h2 id="api">API</h2>
+
+<p>APIs, or Application Programming Interfaces, are a large part of web development. They allow different software applications or websites to communicate with each other. It’s like a messenger that takes your request, tells a system what you want to do, and then returns the system’s response back to you.</p>
+
+<p>In a web context, APIs enable interaction between client-side and server-side components, as well as with external services. For example, when you use a social media site, your browser (the client) sends a request to the site’s server using its API. The server processes the request, and then the API sends the data back to your browser. This data is then presented to you in a readable format.</p>
+
+<figure>
+  
+    <img src="rest-api.png" />
+  
+  
+    <figcaption>REST (Representational State Transfer) is a common software architecture on the web. In REST, a client (a computer or phone) sends a request to a server to perform an action: GET (to retrieve data), POST (to create data), PUT (to update data), or DELETE (to remove data). The server, which holds resources (like HTML files, images, and videos), processes the request and sends back a response in a format that the client can understand, usually in XML or JSON format.</figcaption>
+  
+</figure>
+
+<p>JSON (JavaScript Object Notation) is a common format for data sent over APIs. It is a lightweight format that is easy for humans to read and write and for machines to parse and generate. It will look familiar to you, because you’ve used JavaScript objects before:</p>
+
+<figure>
+  
+    <img src="json.png" />
+  
+  
+    <figcaption>Example data from <a href="https://dummyjson.com/">dummyjson.com</a>. The top would be the code that you write while the bottom is the data sent back from the server.</figcaption>
+  
+</figure>
+
+<h2 id="types-of-web-apis">Types of Web APIs</h2>
+
+<h3 id="internal-apis">Internal APIs</h3>
+
+<p>These are used within the organization that created them, primarily to improve products and services from within. They allow different teams or parts of a software system to communicate with each other.</p>
+
+<p>Example: A large retail company might have an internal API for its inventory management system. This API allows various internal applications, like the point-of-sale system and the online shopping portal, to check inventory levels, update stock, and manage orders without directly accessing the database.</p>
+
+<h3 id="external-apis">External APIs</h3>
+
+<p>An External API is made publicly available for developers outside of the organization that created it. It allows third-party developers (you) to create apps that can communicate with the provider’s service.</p>
+
+<p>Example: The Twitter API (R.I.P. 🪦) was an external API that allowed developers to access Twitter’s functions. Developers used this API to integrate Twitter features into their apps, such as tweeting automatically, accessing tweet streams, or analyzing Twitter data.</p>
+
+<h3 id="web-service-api">Web Service API</h3>
+
+<p>Web Service APIs are designed to be accessed over the web using the HTTP protocol and are commonly used to enable different applications to communicate with each other over the internet.</p>
+
+<p>Example: The Google Maps API is a web service API that allows developers to embed Google Maps on webpages using HTTP requests. This API provides various functionalities like showing a map with markers, providing directions, and displaying traffic conditions.</p>
+
+<figure>
+  
+    <img src="google-maps-api.png" />
+  
+  
+</figure>
+
+<figure>
+  
+    <img src="google-maps-api-html.png" />
+  
+  
+</figure>
+
+<figure>
+  
+    <img src="google-maps-api-js.png" />
+  
+  
+    <figcaption>Check out this example on <a href="https://developers.google.com/maps/documentation/javascript/examples/map-simple#maps_map_simple-javascript">Google’s website</a> and <a href="https://jsfiddle.net/gh/get/library/pure/googlemaps/js-samples/tree/master/dist/samples/map-simple/jsfiddle">JSFiddle</a>.</figcaption>
+  
+</figure>
+
+
+    </main>
+    <div class="top-button js-top-button">
+      ↑
+    </div>
+    <div class="pixel-button js-pixel-button">
+      *
+    </div>
+    <div class="css-button js-css-button">
+      CSS
+    </div>
+    <script src="/teaching/core-1-interaction/js/top_button.js"></script>
+    <script src="/teaching/core-1-interaction/js/pixel.js"></script>
+    <script src="/teaching/core-1-interaction/js/css_button.js"></script>
+  </body>
+</html>
