@@ -16,28 +16,6 @@ font-family: menlo, monospace; // font
 padding: 0.25em;
 */
 /* HTML/CSS/JS only rouge declarations */
-.kd,
-.kc {
-  color: #649ad1;
-}
-
-.nx {
-  color: #a7d9f9;
-}
-
-.dl,
-.s2 {
-  color: #c3ad7c;
-}
-
-.mi {
-  color: #bacdab;
-}
-
-.k {
-  color: #649ad1;
-}
-
 /* Default text color and background color */
 .highlight,
 .highlight .w {
@@ -48,53 +26,14 @@ padding: 0.25em;
   overflow: scroll;
 }
 
-/* Keywords and related tokens */
-/* Generic tokens */
-/* Numbers */
-.highlight .nb,
-.highlight .nf {
-  color: #c6947c;
-}
-
-.highlight .n {
-  color: #c6947c;
-}
-
-.highlight .m {
-  color: #bacdab;
-}
-
-/* Constructors */
-.highlight .nc {
-  color: #c3ad7c;
-}
-
-.highlight .nl {
-  color: #a7d9f9;
-}
-
-/* Operators */
-.highlight .no {
-  color: #c6947c;
-}
-
-/* Function and class names */
-.highlight .na {
-  color: #a7d9f9;
-}
-
-/* Types and type names */
-.highlight .nt {
+.kd,
+.kc,
+.k,
+.highlight .nt,
+.highlight .cp {
   color: #649ad1;
 }
 
-/* Literal and variable content */
-/* Symbols and brackets */
-/* Exceptions */
-/* Numeric values */
-/* Operators and punctuations */
-/* User-defined variables and functions */
-/* Comments and documentation */
 .highlight .c,
 .highlight .ch,
 .highlight .cd,
@@ -106,13 +45,31 @@ padding: 0.25em;
   color: #688855;
 }
 
-.highlight .cp {
-  color: #649ad1;
-}
-
-/* Imports and includes */
+.highlight .nb,
+.highlight .nf,
+.highlight .n,
+.highlight .nd,
+.highlight .no,
 .highlight .s {
   color: #c6947c;
+}
+
+.dl,
+.s2,
+.highlight .nc {
+  color: #c3ad7c;
+}
+
+.nx,
+.highlight .nl,
+.highlight .na,
+.highlight .py {
+  color: #a7d9f9;
+}
+
+.mi,
+.highlight .m {
+  color: #bacdab;
 }
 
 /* Code syntax for items not classed specifically by rouge */
