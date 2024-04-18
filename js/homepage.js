@@ -1,12 +1,12 @@
 function setTime() {
-  const y = 2023; // year
-  const m = (12 - 1); // month (zero-indexed)
-  const d = 30; // day
+  const y = 2024; // year
+  const m = (4 - 1); // month (zero-indexed)
+  const d = 18; // day
 
-  let h = 4; // hour (24 hr time)
+  let h = 19; // hour (24 hr time)
   const meridian = true; // false if AM, true if PM
   if (meridian) h += 12;
-  const n = 49; // minute
+  const n = 10; // minute
 
   const updated_at = new Date(y, m, d, h, n, 0);
   const today = new Date();
@@ -25,7 +25,7 @@ function setTime() {
   else if (time_since < (week_ms * 2)) time_phrase = "week"
   else if (time_since < month_ms) time_phrase = "few weeks"
   else if (time_since < (month_ms * 2)) time_phrase = "month"
-  else time_phrase = "months";
+  else time_phrase = "long time";
 
   document.querySelector(".js-last-updated").innerText = `A ${time_phrase} ago`;
 }
