@@ -1,7 +1,0 @@
-/* Setup styles are in the other file. */
-
-div:nth-child(3) {
-  background-color: gold;
-  position: static;
-  width: 66%;
-}
