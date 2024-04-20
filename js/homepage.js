@@ -1,12 +1,12 @@
 function setTime() {
   const y = 2024; // year
   const m = (4 - 1); // month (zero-indexed)
-  const d = 19; // day
+  const d = 20; // day
 
-  let h = 19; // hour (24 hr time)
+  let h = 11; // hour (24 hr time)
   const meridian = true; // false if AM, true if PM
   if (meridian) h += 12;
-  const n = 22; // minute
+  const n = 36; // minute
 
   const updated_at = new Date(y, m, d, h, n, 0);
   const today = new Date();
