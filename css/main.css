@@ -22,50 +22,22 @@ body {
   padding-top: 10px;
 }
 
-::selection {
-  background-color: var(--gray);
-}
-
 a {
-  color: var(--black);
+  color: var(--blue);
   text-decoration: none;
 
-  &:active {
-    color: var(--green);
-  }
-
   &:hover {
-    color: var(--blue);
-  }
-
-  &:visited {
-    color: initial;
-  }
-}
-
-a.table-row {
-  display: flex;
-
-  &:active {
     color: var(--green);
-
-    .table-cell {
-      color: var(--green);
-    }
-  }
-
-  &:hover {
-    color: var(--blue);
-
-    .table-cell {
-      color: var(--blue);
-    }
   }
 }
 
 p {
   margin-bottom: 1rem;
   max-width: 55ch;
+}
+
+::selection {
+  background-color: var(--gray);
 }
 
 .nav {
@@ -106,23 +78,29 @@ p {
   display: none;
 }
 
+.update-notice {
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  margin-top: 2rem;
+}
+
 @media (min-width: 400px) {
   .table-cell--project {
-    flex-basis: 35%;
+    flex-basis: 45%;
   }
 
   .table-cell--category {
     display: unset;
-    flex-basis: 25%;
+    flex-basis: 22%;
   }
 
   .table-cell--role {
     display: unset;
-    flex-basis: 25%;
+    flex-basis: 22%;
   }
 
   .table-cell--end-date {
     display: unset;
-    flex-basis: 15%;
+    flex-basis: 10%;
   }
 }
