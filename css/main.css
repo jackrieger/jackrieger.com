@@ -1,17 +1,7 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: "Hershey Simplex";
-  src: url('../fonts/AVHersheySimplexMedium.ttf');
-}
-
-@font-face {
-  font-family: "Hershey Simplex";
-  font-style: italic;
-  src: url('../fonts/AVHersheySimplexMediumItalic.ttf');
-}
-
 html {
+  --black: #000000;
   --blue: #2222ff;
   --gray: #ededed;
   --green: #14F578;
@@ -22,16 +12,14 @@ html {
 body {
   background-color: var(--white);
   cursor: default;
-  font-family: "Hershey Simplex", helvetica, sans-serif;
-  font-size: 23px;
-  letter-spacing: -0.01em;
-  line-height: 1.1;
-  max-width: 670px;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
-  word-spacing: 0.05em;
 }
 
 ::selection {
@@ -39,53 +27,102 @@ body {
 }
 
 a {
-  color: var(--blue);
+  color: var(--black);
   text-decoration: none;
+
+  &:active {
+    color: var(--green);
+  }
+
+  &:hover {
+    color: var(--blue);
+  }
+
+  &:visited {
+    color: initial;
+  }
 }
 
-a:visited {
-  color: var(--blue);
+a.table-row {
+  display: flex;
+
+  &:active {
+    color: var(--green);
+
+    .table-cell {
+      color: var(--green);
+    }
+  }
+
+  &:hover {
+    color: var(--blue);
+
+    .table-cell {
+      color: var(--blue);
+    }
+  }
 }
 
-a:active {
-  color: var(--blue);
-}
-
-a:hover {
-  color: var(--green);
-}
-
-ul {
-  display: block;
-  margin-bottom: 1em;
-  margin-top: 1em;
-  padding-left: 1em;
-  text-indent: -1em;
-}
-
-li {
-  margin-bottom: 0.25em;
-}
-
-li:before {
-  content: "-";
-  margin-right: 0.1em;
-}
-
-.column-one {
+p {
   margin-bottom: 1rem;
+  max-width: 55ch;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
   width: 100%;
 }
 
-.column-one p {
-  margin-bottom: 1rem;
+.table {
+  display: flex;
+  flex-direction: column;
 }
 
-.font-small {
-  font-size: 16px;
+.table-row {
+  display: flex;
 }
 
-.job-title:hover {
-  color: var(--green);
-  cursor: pointer;
+.table-cell {
+  border-bottom: 1px solid var(--black);
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.table-cell--project {
+  flex-basis: 100%;
+}
+
+.table-cell--category {
+  display: none;
+}
+
+.table-cell--role {
+  display: none;
+}
+
+.table-cell--end-date {
+  display: none;
+}
+
+@media (min-width: 400px) {
+  .table-cell--project {
+    flex-basis: 35%;
+  }
+
+  .table-cell--category {
+    display: unset;
+    flex-basis: 25%;
+  }
+
+  .table-cell--role {
+    display: unset;
+    flex-basis: 25%;
+  }
+
+  .table-cell--end-date {
+    display: unset;
+    flex-basis: 15%;
+  }
 }
