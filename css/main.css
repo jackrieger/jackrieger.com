@@ -31,6 +31,14 @@ a {
   }
 }
 
+.link--hidden {
+  color: var(--black);
+
+  &:hover {
+    color: var(--green);
+  }
+}
+
 p {
   margin-bottom: 1rem;
   max-width: 55ch;
@@ -59,7 +67,8 @@ p {
 .table-cell {
   border-bottom: 1px solid var(--black);
   flex: 1;
-  padding: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .table-cell--project {
@@ -81,7 +90,7 @@ p {
 .update-notice {
   font-size: 15px;
   letter-spacing: 0.02em;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 400px) {

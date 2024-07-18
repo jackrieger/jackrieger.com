@@ -1,6 +1,6 @@
 function setTime() {
   const y = 2024; // year
-  const m = (7 - 1); // month (zero-indexed)
+  const m = (7 - 1); // month (- zero-indexed)
   const d = 17; // day
 
   let h = 10; // hour (24 hr time)
@@ -27,7 +27,7 @@ function setTime() {
   else if (time_since < (month_ms * 2)) time_phrase = "month"
   else time_phrase = "long time";
 
-  document.querySelector(".js-update-notice").innerText = `Updated: A ${time_phrase} ago`;
+  document.querySelector(".js-update-notice").innerText = `Updated: a ${time_phrase} ago`;
 }
 
 function setEmailCopy() {
