@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimes Times: Salad Randomizer</title>
+  <style>
+    html {
+      background-color: rgb(100, 140, 170);
+    }
+    body {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+    .randomizer-container {
+      margin: 20px;
+    }
+    button {
+      appearance: none;
+      background-color: #9a7e5a;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .ingredient {
+      display: inline-block;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .ingredient--green {
+      background-color: rgb(115, 180, 140);
+    }
+    .ingredient--raw {
+      background-color: #5fd5f9;
+    }
+    .ingredient--cooked {
+      background-color: #f7a8d3;
+    }
+    .ingredient--crunchy {
+      background-color: #cd303d;
+    }
+    .ingredient--pickled {
+      background-color: #edff24;
+    }
+  </style>
+</head>
+<body>
+  <div class="randomizer-container">
+    <button onclick="makeSalad()">MAKE SALAD</button>
+    <div class="result" id="salad-result"></div>
+  </div>
+
+  <script>
+    const greens = [
+      "Broccoli leaf",
+      "Kale",
+      "Cabbage",
+      "Collards",
+      "Chards",
+      "Arugula",
+      "Mizuna",
+      "Spinach",
+      "Baby lettuces",
+      "Sorrel",
+      "Frisee",
+      "Escarole",
+      "Radicchio",
+      "Mustard Greens",
+      "Romaine",
+      "Butter lettuce"
+    ];
+
+    const raw = [
+      "Pomegranate",
+      "Apple",
+      "Hakurei turnips",
+      "Watermelon",
+      "Pears",
+      "Stonefruit",
+      "Figs",
+      "Fennel",
+      "Kohlrabi",
+      "Cucumber",
+      "Citrus",
+      "Gooseberries",
+      "Cabbage",
+      "Radish",
+      "Tomatoes",
+      "Celery"
+    ];
+
+    const cooked = [
+      "Squash",
+      "Sweet potato",
+      "Beets",
+      "Green beans",
+      "Carrot",
+      "Celery root",
+      "Cauliflower",
+      "Broccoli",
+      "Zucchini",
+      "Eggplant",
+      "Corn",
+      "Asparagus",
+      "Mushrooms",
+      "Peas",
+      "Brussels sprouts",
+      "Rhubarb",
+    ];
+
+    const crunchy = [
+      "Sunflower seeds",
+      "Pepitas",
+      "Kasha",
+      "Flax seeds",
+      "Almonds",
+      "Hazelnuts",
+      "Dukkah",
+      "Pistachio",
+      "Walnuts",
+      "Cashews",
+      "Croutons",
+      "Breadcrumbs",
+      "Pine nuts",
+      "Sesame seeds",
+      "Hemp seeds",
+      "Peanuts"
+    ];
+
+    const pickled = [
+      "Red Onion",
+      "Mustard seeds",
+      "Raisins",
+      "Cabbage",
+      "Rhubarb",
+      "Watermelon",
+      "Cauliflower",
+      "Cucumber",
+      "Fennel",
+      "Carrots",
+      "Beets",
+      "Peppers",
+      "Fresno chili",
+      "Jalapeno",
+      "Mushrooms",
+      "Green beans"
+    ];
+
+    function pickIngredient(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    function makeSalad() {
+      document.querySelector("#salad-result").innerHTML = `
+        <div class="ingredient ingredient--green">GREEN: ${pickIngredient(greens)}</div> <br>
+        <div class="ingredient ingredient--raw">RAW: ${pickIngredient(raw)}</div> <br>
+        <div class="ingredient ingredient--cooked">COOKED: ${pickIngredient(cooked)}</div> <br>
+        <div class="ingredient ingredient--crunchy">CRUNCHY: ${pickIngredient(crunchy)}</div> <br>
+        <div class="ingredient ingredient--pickled">PICKLED: ${pickIngredient(pickled)}</div> <br>
+      `;
+    }
+  </script>
+</body>
+</html>
