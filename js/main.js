@@ -8,7 +8,9 @@ import { setTime, setEmailCopy, setJobText } from "./utility.js";
   setJobText();
   setTime();
 
-  // Ensure data is loaded before setting sorting
-  await loadProjects();
-  setSorting();
+  const hasProjectTable = document.querySelector(".js-project-table");
+  if (hasProjectTable) {
+    await loadProjects();
+    setSorting();
+  }
 })();
