@@ -1,3 +1,5 @@
+/* main.css */
+
 @charset "UTF-8";
 
 html {
@@ -13,8 +15,8 @@ body {
   background-color: var(--white);
   cursor: default;
   font-family: arial, sans-serif;
-  font-size: 20px;
-  letter-spacing: 0.015em;
+  font-size: 19px;
+  letter-spacing: 0.02em;
   line-height: 1.2;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -87,28 +89,39 @@ p {
   display: none;
 }
 
+.sort-arrow {
+  margin-top: -2px;
+  padding-left: 2px;
+  font-size: 0.9em;
+}
+
 .update-notice {
   font-size: 15px;
   letter-spacing: 0.02em;
   margin-top: 1.5rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 900px) {
   .table-cell--project {
     flex-basis: 45%;
   }
 
   .table-cell--category {
     display: unset;
-    flex-basis: 22%;
+    flex-basis: 15%;
   }
 
   .table-cell--role {
     display: unset;
-    flex-basis: 22%;
+    flex-basis: 15%;
   }
 
   .table-cell--end-date {
+    display: unset;
+    flex-basis: 10%;
+  }
+
+  .table-cell--contribution {
     display: unset;
     flex-basis: 10%;
   }

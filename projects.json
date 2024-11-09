@@ -1,0 +1,164 @@
+[
+  {
+    "project": "Core 1: Interaction",
+    "category": "teaching",
+    "role": "instructor",
+    "date": "2024",
+    "link": "https://jackrieger.github.io/core-1-interaction/",
+    "contribution": 2
+  },
+  {
+    "project": "Core 2: Interaction Lab",
+    "category": "teaching",
+    "role": "instructor",
+    "date": "2024",
+    "link": "https://jackrieger.github.io/core-2-interaction-lab/",
+    "contribution": 2
+  },
+  {
+    "project": "A4 Arts Foundation",
+    "category": "engineering",
+    "role": "developer",
+    "date": "2024",
+    "link": "https://www.a4arts.org/",
+    "contribution": 3
+  },
+  {
+    "project": "Core 1: Interaction",
+    "category": "teaching",
+    "role": "instructor",
+    "date": "2023",
+    "contribution": 2
+  },
+  {
+    "project": "Ministry in the City HUB",
+    "category": "engineering",
+    "role": "developer",
+    "date": "2023",
+    "link": "https://www.ministryinthecityhub.org/",
+    "contribution": 3
+  },
+  {
+    "project": "Parsons CodeLab",
+    "category": "teaching",
+    "role": "speaker",
+    "date": "2023",
+    "contribution": 1
+  },
+  {
+    "project": "Data for Black Lives",
+    "category": "engineering",
+    "role": "developer",
+    "date": "2023",
+    "link": "https://d4bl.org/",
+    "contribution": 3
+  },
+  {
+    "project": "Lockdown University",
+    "category": "engineering",
+    "role": "developer",
+    "date": "2023",
+    "link": "https://www.lockdownuniversity.org/",
+    "contribution": 3
+  },
+  {
+    "project": "CD Studio: JavaScript",
+    "category": "teaching",
+    "role": "speaker",
+    "date": "2022",
+    "contribution": 1
+  },
+  {
+    "project": "Core 2: Interaction Lab",
+    "category": "teaching",
+    "role": "critic",
+    "date": "2022",
+    "contribution": 1
+  },
+  {
+    "project": "Interactive Design and the Internet: Software for People",
+    "category": "teaching",
+    "role": "critic",
+    "date": "2022",
+    "contribution": 1
+  },
+  {
+    "project": "Sam Fox School of Design & Visual Arts",
+    "category": "engineering",
+    "role": "developer",
+    "date": "2022",
+    "link": "https://samfoxschool.wustl.edu/",
+    "contribution": 3
+  },
+  {
+    "project": "Tufts University Art Galleries",
+    "category": "engineering",
+    "role": "maintenance",
+    "date": "2022",
+    "link": "https://artgalleries.tufts.edu/",
+    "contribution": 1
+  },
+  {
+    "project": "National Academy of Design Annual Exhibition",
+    "category": "engineering",
+    "role": "maintenance",
+    "date": "2021",
+    "link": "https://www.linkedbyair.net/projects/144-e-pluribus-out-of-many",
+    "contribution": 1
+  },
+  {
+    "project": "Columbia GSAPP",
+    "category": "engineering",
+    "role": "maintenance",
+    "date": "2021",
+    "link": "https://www.arch.columbia.edu/",
+    "contribution": 1
+  },
+  {
+    "project": "Yale Architecture Advanced Technology",
+    "category": "engineering",
+    "role": "developer",
+    "date": "2020",
+    "link": "https://www.architecture.yale.edu/advanced-technology",
+    "contribution": 2
+  },
+  {
+    "project": "Institute of Contemporary Art, Los Angeles",
+    "category": "engineering",
+    "role": "maintenance",
+    "date": "2020",
+    "link": "https://www.theicala.org/en",
+    "contribution": 1
+  },
+  {
+    "project": "Museo Jumex",
+    "category": "engineering",
+    "role": "maintenance",
+    "date": "2020",
+    "link": "https://www.fundacionjumex.org/en",
+    "contribution": 1
+  },
+  {
+    "project": "The European Fine Art Fair",
+    "category": "engineering",
+    "role": "developer",
+    "date": "2019",
+    "link": "https://www.linkedbyair.net/projects/126-tefaf-website",
+    "contribution": 1
+  },
+  {
+    "project": "Deborah Berke Partners",
+    "category": "engineering",
+    "role": "developer",
+    "date": "2019",
+    "link": "https://www.linkedbyair.net/projects/90-deborah-berke-partners-website",
+    "contribution": 1
+  },
+  {
+    "project": "The Pedagogy of Design in the Age of Computation",
+    "category": "teaching",
+    "role": "speaker",
+    "date": "2018",
+    "contribution": 1
+  }
+]

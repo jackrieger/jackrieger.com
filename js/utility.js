@@ -1,12 +1,13 @@
-function setTime() {
-  const y = 2024; // year
-  const m = (9 - 1); // month (- zero-indexed)
-  const d = 27; // day
+// utility.js
 
-  let h = 7; // hour (24 hr time)
-  const meridian = true; // false if AM, true if PM
+export function setTime() {
+  const y = 2024;
+  const m = 9 - 1;
+  const d = 27;
+  let h = 7;
+  const meridian = true;
   if (meridian) h += 12;
-  const n = 58; // minute
+  const n = 58;
 
   const updated_at = new Date(y, m, d, h, n, 0);
   const today = new Date();
@@ -18,19 +19,18 @@ function setTime() {
   const week_ms = 1209600000;
   const month_ms = 2628000000;
 
-  if (time_since < hour_ms) time_phrase = "few moments"
-  else if (time_since < day_ms) time_phrase = "few hours"
-  else if (time_since < (day_ms * 2)) time_phrase = "day"
-  else if (time_since < week_ms) time_phrase = "few days"
-  else if (time_since < (week_ms * 2)) time_phrase = "week"
-  else if (time_since < month_ms) time_phrase = "few weeks"
-  else if (time_since < (month_ms * 2)) time_phrase = "month"
+  if (time_since < hour_ms) time_phrase = "few moments";
+  else if (time_since < day_ms) time_phrase = "few hours";
+  else if (time_since < day_ms * 2) time_phrase = "day";
+  else if (time_since < week_ms) time_phrase = "few days";
+  else if (time_since < week_ms * 2) time_phrase = "week";
+  else if (time_since < month_ms * 2) time_phrase = "few weeks";
   else time_phrase = "long time";
 
   document.querySelector(".js-update-notice").innerText = `Updated: a ${time_phrase} ago`;
 }
 
-function setEmailCopy() {
+export function setEmailCopy() {
   const el = document.querySelector(".js-email-copy");
 
   if (!el) return;
@@ -42,7 +42,7 @@ function setEmailCopy() {
     const email = "jack@jackrieger.com";
 
     navigator.clipboard.writeText(email).then(function () {
-      el.innerText = "Email copied!"
+      el.innerText = "Email copied!";
     }, function (err) {
       console.error("Could not copy email.", err);
     });
@@ -50,10 +50,10 @@ function setEmailCopy() {
     setTimeout(function () {
       el.innerHTML = html;
     }, 2000);
-  })
+  });
 }
 
-function setJobText() {
+export function setJobText() {
   const titles = [
     "coder",
     "developer",
@@ -72,7 +72,7 @@ function setJobText() {
     return titles[Math.floor(Math.random() * titles.length)];
   }
 
-  titleElement.addEventListener("click", function (e) {
+  titleElement.addEventListener("click", function () {
     const current = titleElement.innerHTML;
     let selection = getJobTitle();
 
@@ -83,9 +83,3 @@ function setJobText() {
     titleElement.innerText = selection;
   });
 }
-
-(function run() {
-  setEmailCopy();
-  setJobText();
-  setTime();
-})();
