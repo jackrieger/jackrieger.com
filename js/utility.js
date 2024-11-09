@@ -1,15 +1,11 @@
 // utility.js
 
 export function setTime() {
-  const y = 2024;
-  const m = 9 - 1;
-  const d = 27;
-  let h = 7;
-  const meridian = true;
-  if (meridian) h += 12;
-  const n = 58;
+  // Define the last updated time as a single ISO string
+  const lastUpdatedISO = "2024-11-09T14:27:00"; // Use format "YYYY-MM-DDTHH:MM:SS"
 
-  const updated_at = new Date(y, m, d, h, n, 0);
+  // Parse the ISO string into a Date object
+  const updated_at = new Date(lastUpdatedISO);
   const today = new Date();
   const time_since = today - updated_at;
 
