@@ -1,7 +1,7 @@
 [
   {
     "project": "Core 1: Interaction",
-    "category": "teaching",
+    "category": "education",
     "role": "instructor",
     "date": "2024",
     "link": "https://jackrieger.github.io/core-1-interaction/",
@@ -9,7 +9,7 @@
   },
   {
     "project": "Core 2: Interaction Lab",
-    "category": "teaching",
+    "category": "education",
     "role": "instructor",
     "date": "2024",
     "link": "https://jackrieger.github.io/core-2-interaction-lab/",
@@ -25,7 +25,7 @@
   },
   {
     "project": "Core 1: Interaction",
-    "category": "teaching",
+    "category": "education",
     "role": "instructor",
     "date": "2023",
     "contribution": 2
@@ -40,7 +40,7 @@
   },
   {
     "project": "Parsons CodeLab",
-    "category": "teaching",
+    "category": "education",
     "role": "speaker",
     "date": "2023",
     "contribution": 1
@@ -63,21 +63,21 @@
   },
   {
     "project": "CD Studio: JavaScript",
-    "category": "teaching",
+    "category": "education",
     "role": "speaker",
     "date": "2022",
     "contribution": 1
   },
   {
     "project": "Core 2: Interaction Lab",
-    "category": "teaching",
+    "category": "education",
     "role": "critic",
     "date": "2022",
     "contribution": 1
   },
   {
     "project": "Interactive Design and the Internet: Software for People",
-    "category": "teaching",
+    "category": "education",
     "role": "critic",
     "date": "2022",
     "contribution": 1
@@ -156,7 +156,7 @@
   },
   {
     "project": "The Pedagogy of Design in the Age of Computation",
-    "category": "teaching",
+    "category": "education",
     "role": "speaker",
     "date": "2018",
     "contribution": 1
