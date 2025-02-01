@@ -1,5 +1,3 @@
-// utility.js
-
 export function setTime() {
   // Define the last updated time as a single ISO string
   const lastUpdatedISO = "2024-11-09T14:27:00"; // Use format "YYYY-MM-DDTHH:MM:SS"
@@ -23,7 +21,9 @@ export function setTime() {
   else if (time_since < month_ms * 2) time_phrase = "few weeks";
   else time_phrase = "long time";
 
-  document.querySelector(".js-update-notice").innerText = `Updated: a ${time_phrase} ago`;
+  document.querySelector(
+    ".js-update-notice"
+  ).innerText = `Updated: a ${time_phrase} ago`;
 }
 
 export function setEmailCopy() {
@@ -37,11 +37,14 @@ export function setEmailCopy() {
     const html = el.innerHTML;
     const email = "jack@jackrieger.com";
 
-    navigator.clipboard.writeText(email).then(function () {
-      el.innerText = "Email copied!";
-    }, function (err) {
-      console.error("Could not copy email.", err);
-    });
+    navigator.clipboard.writeText(email).then(
+      function () {
+        el.innerText = "Email copied!";
+      },
+      function (err) {
+        console.error("Could not copy email.", err);
+      }
+    );
 
     setTimeout(function () {
       el.innerHTML = html;

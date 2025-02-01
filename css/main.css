@@ -6,7 +6,7 @@ html {
   --black: #000000;
   --blue: #2222ff;
   --gray: #ededed;
-  --green: #14F578;
+  --green: #14f578;
   --white: #fdfdfd;
   background-color: var(--white);
 }
@@ -89,6 +89,15 @@ p {
   display: none;
 }
 
+.table__details {
+  display: block;
+}
+
+.table__summary {
+  display: flex;
+  width: 100%;
+}
+
 .sort-arrow {
   margin-top: -2px;
   padding-left: 2px;
@@ -102,26 +111,26 @@ p {
 }
 
 @media (min-width: 900px) {
-  .table-cell--project {
+  .table__summary__project {
     flex-basis: 45%;
   }
 
-  .table-cell--category {
+  .table__summary__category {
     display: unset;
     flex-basis: 15%;
   }
 
-  .table-cell--role {
+  .table__summary__role {
     display: unset;
     flex-basis: 15%;
   }
 
-  .table-cell--end-date {
+  .table__summary__end-date {
     display: unset;
     flex-basis: 10%;
   }
 
-  .table-cell--contribution {
+  .table__summary__contribution {
     display: unset;
     flex-basis: 10%;
   }

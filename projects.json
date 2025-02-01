@@ -5,7 +5,8 @@
     "role": "instructor",
     "date": "2024",
     "link": "https://jackrieger.github.io/core-1-interaction/",
-    "contribution": 2
+    "contribution": 2,
+    "description": "Lorem ipsum"
   },
   {
     "project": "Core 2: Interaction Lab",

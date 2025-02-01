@@ -1,4 +1,3 @@
-// main.js
 import { loadProjects } from "./data-fetching.js";
 import { setSorting } from "./sorting.js";
 import { setTime, setEmailCopy, setJobText } from "./utility.js";
