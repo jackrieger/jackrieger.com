@@ -13,11 +13,11 @@ export async function loadProjects() {
 
 function renderProjects(projects) {
   const table = document.querySelector(".js-project-table");
-  table.innerHTML = ""; // Clear any existing content
+  table.innerHTML = "";
 
-  projects.forEach(project => {
-    const row = project.link ? document.createElement("a") : document.createElement("div");
-    row.classList.add("table-row");
+  projects.forEach((project) => {
+    const row = document.createElement("details");
+    row.classList.add("table__details");
 
     if (project.link) {
       row.href = project.link;
@@ -25,12 +25,33 @@ function renderProjects(projects) {
     }
 
     row.innerHTML = `
-      <div class="table-cell table-cell--project">${project.project}</div>
-      <div class="table-cell table-cell--category">${project.category}</div>
-      <div class="table-cell table-cell--role">${project.role}</div>
-      <div class="table-cell table-cell--end-date">${project.date}</div>
-      <div class="table-cell table-cell--contribution" data-contribution="${project.contribution}">
-        ${getContributionDots(project.contribution)}
+      <summary class="table__summary">
+        <div class="table__summary__project">${project.project}</div>
+        <div class="table__summary__category">${project.category}</div>
+        <div class="table__summary__role">${project.role}</div>
+        <div class="table__summary__date">${project.date}</div>
+        <div class="table__summary__contribution" data-contribution="${
+          project.contribution
+        }">
+          ${getContributionDots(project.contribution)}
+        </div>
+      </summary>
+      <div class="table__info">
+        ${
+          project.description
+            ? `<p class="table__description">${project.description}</p>`
+            : ""
+        }
+        ${
+          project.link
+            ? `
+              <p class="table__link">
+                <a href="${project.link}" target="_blank">
+                  ↪ View project
+                </a>
+              </p>`
+            : ""
+        }
       </div>
     `;
 

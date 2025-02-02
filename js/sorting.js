@@ -1,44 +1,53 @@
 // sorting.js
 
 export function setSorting() {
-  const headers = document.querySelectorAll(".table-heading .table-cell");
+  const headers = document.querySelectorAll(".js-sort-header");
 
-  headers.forEach(header => {
+  headers.forEach((header) => {
     header.addEventListener("click", () => {
-      const columnClass = header.className.split("--")[1];
+      const column = header.dataset.column;
       let asc = header.dataset.asc === "true" ? false : true;
 
-      sortTable(columnClass, asc);
-
+      sortTable(column, asc);
       updateIndicators(headers, header, asc);
-
       header.dataset.asc = asc;
     });
   });
 
-  // Initial sort by "Contribution" in descending order
-  const contributionHeader = document.querySelector(".table-cell--contribution");
+  // Initial sort by "contribution" in descending order
+  const contributionHeader = document.querySelector(
+    ".js-sort-header[data-column='contribution']"
+  );
   if (contributionHeader) {
-    contributionHeader.dataset.asc = false; // Set initial direction to descending
-    sortTable("contribution", false); // Initial sort descending
-    updateIndicators(headers, contributionHeader, false); // Show descending arrow
+    contributionHeader.dataset.asc = false;
+    sortTable("contribution", false);
+    updateIndicators(headers, contributionHeader, false);
   }
 }
 
-export function sortTable(columnClass, asc = true) {
-  const rows = Array.from(document.querySelectorAll(".js-project-table .table-row"));
+export function sortTable(column, asc = true) {
+  const rows = Array.from(
+    document.querySelectorAll(".js-project-table .table__details")
+  );
 
   rows.sort((a, b) => {
-    if (columnClass === "contribution") {
-      // Directly access the numeric data-contribution attribute for sorting
-      const aValue = Number(a.querySelector(`.table-cell--${columnClass}`).dataset.contribution);
-      const bValue = Number(b.querySelector(`.table-cell--${columnClass}`).dataset.contribution);
+    if (column === "contribution") {
+      const aValue = Number(
+        a.querySelector(`.table__summary__${column}`).dataset.contribution
+      );
+      const bValue = Number(
+        b.querySelector(`.table__summary__${column}`).dataset.contribution
+      );
       return asc ? aValue - bValue : bValue - aValue;
     } else {
-      const aText = a.querySelector(`.table-cell--${columnClass}`).innerText.trim();
-      const bText = b.querySelector(`.table-cell--${columnClass}`).innerText.trim();
+      const aText = a
+        .querySelector(`.table__summary__${column}`)
+        .innerText.trim();
+      const bText = b
+        .querySelector(`.table__summary__${column}`)
+        .innerText.trim();
 
-      if (columnClass === "end-date") {
+      if (column === "date") {
         const aDate = new Date(aText);
         const bDate = new Date(bText);
         return asc ? aDate - bDate : bDate - aDate;
@@ -49,16 +58,16 @@ export function sortTable(columnClass, asc = true) {
   });
 
   const table = document.querySelector(".js-project-table");
-  rows.forEach(row => table.appendChild(row));
+  rows.forEach((row) => table.appendChild(row));
 }
 
 function updateIndicators(headers, activeHeader, asc) {
-  headers.forEach(header => {
-    const arrow = header.querySelector(".sort-arrow");
+  headers.forEach((header) => {
+    const arrow = header.querySelector(".js-sort-arrow");
     if (arrow) arrow.textContent = "";
   });
 
-  const activeArrow = activeHeader.querySelector(".sort-arrow");
+  const activeArrow = activeHeader.querySelector(".js-sort-arrow");
   if (activeArrow) {
     activeArrow.textContent = asc ? "↑" : "↓";
   }

@@ -1,12 +1,10 @@
-/* main.css */
-
 @charset "UTF-8";
 
 html {
   --black: #000000;
   --blue: #2222ff;
-  --gray: #ededed;
-  --green: #14F578;
+  --gray: #dddddd;
+  --green: #14f578;
   --white: #fdfdfd;
   background-color: var(--white);
 }
@@ -43,7 +41,7 @@ a {
 
 p {
   margin-bottom: 1rem;
-  max-width: 55ch;
+  max-width: 58ch;
 }
 
 ::selection {
@@ -57,42 +55,65 @@ p {
   width: 100%;
 }
 
-.table {
-  display: flex;
-  flex-direction: column;
+.nav-link.js-expand-toggle {
+  margin-left: 1rem;
 }
 
 .table-row {
+  border-bottom: solid 1px;
   display: flex;
+  padding-bottom: 0.5rem;
 }
 
-.table-cell {
+.table__details {
   border-bottom: 1px solid var(--black);
   flex: 1;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+
+  .table__summary {
+    color: var(--blue);
+  }
+
+  &:hover {
+    .table__summary {
+      color: var(--black);
+      cursor: pointer;
+    }
+  }
 }
 
-.table-cell--project {
+.table-category {
+  &:has([data-asc="true"]) {
+    cursor: n-resize;
+  }
+}
+
+.table__summary {
+  display: flex;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+.table__summary__project {
   flex-basis: 100%;
 }
 
-.table-cell--category {
+.table__summary__category {
   display: none;
 }
 
-.table-cell--role {
+.table__summary__role {
   display: none;
 }
 
-.table-cell--end-date {
+.table__summary__date {
   display: none;
 }
 
 .sort-arrow {
-  margin-top: -2px;
-  padding-left: 2px;
   font-size: 0.9em;
+  padding-left: 2px;
+  position: absolute;
 }
 
 .update-notice {
@@ -102,27 +123,27 @@ p {
 }
 
 @media (min-width: 900px) {
-  .table-cell--project {
+  .table__summary__project {
     flex-basis: 45%;
   }
 
-  .table-cell--category {
+  .table__summary__category {
     display: unset;
-    flex-basis: 15%;
+    flex-basis: 17.5%;
   }
 
-  .table-cell--role {
+  .table__summary__role {
     display: unset;
-    flex-basis: 15%;
+    flex-basis: 17.5%;
   }
 
-  .table-cell--end-date {
+  .table__summary__date {
     display: unset;
     flex-basis: 10%;
   }
 
-  .table-cell--contribution {
+  .table__summary__contribution {
     display: unset;
-    flex-basis: 10%;
+    flex-basis: 5%;
   }
 }
