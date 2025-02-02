@@ -55,40 +55,10 @@ p {
   width: 100%;
 }
 
-.table {
-  display: flex;
-  flex-direction: column;
-}
-
 .table-row {
-  display: flex;
-}
-
-.table-cell--project {
-  flex-basis: 100%;
-}
-
-.table-cell--category {
-  display: none;
-}
-
-.table-cell--role {
-  display: none;
-}
-
-.table-cell--end-date {
-  display: none;
-}
-
-.table__details {
-  display: block;
-}
-
-.table__summary {
+  border-bottom: solid 1px;
   display: flex;
   padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  width: 100%;
 }
 
 .table__details {
@@ -107,6 +77,29 @@ p {
       }
     }
   }
+}
+
+.table__summary {
+  display: flex;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+.table__summary__project {
+  flex-basis: 100%;
+}
+
+.table__summary__category {
+  display: none;
+}
+
+.table__summary__role {
+  display: none;
+}
+
+.table__summary__date {
+  display: none;
 }
 
 .sort-arrow {
@@ -136,7 +129,7 @@ p {
     flex-basis: 15%;
   }
 
-  .table__summary__end-date {
+  .table__summary__date {
     display: unset;
     flex-basis: 10%;
   }

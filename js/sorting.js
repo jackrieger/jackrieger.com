@@ -1,38 +1,38 @@
 export function setSorting() {
-  const headers = document.querySelectorAll(".table-heading .table__summary");
+  const headers = document.querySelectorAll(
+    '.table-heading [class^="table__summary__"]'
+  );
 
   headers.forEach((header) => {
     header.addEventListener("click", () => {
-      const columnClass = header.className.split("__")[1];
+      const parts = header.className.split("__");
+      const columnClass = parts[parts.length - 1];
       let asc = header.dataset.asc === "true" ? false : true;
 
       sortTable(columnClass, asc);
-
       updateIndicators(headers, header, asc);
-
       header.dataset.asc = asc;
     });
   });
 
-  // Initial sort by "Contribution" in descending order
+  // Initial sort by "contribution" in descending order
   const contributionHeader = document.querySelector(
     ".table__summary__contribution"
   );
   if (contributionHeader) {
-    contributionHeader.dataset.asc = false; // Set initial direction to descending
-    sortTable("contribution", false); // Initial sort descending
-    updateIndicators(headers, contributionHeader, false); // Show descending arrow
+    contributionHeader.dataset.asc = false;
+    sortTable("contribution", false);
+    updateIndicators(headers, contributionHeader, false);
   }
 }
 
 export function sortTable(columnClass, asc = true) {
   const rows = Array.from(
-    document.querySelectorAll(".js-project-table .table-row")
+    document.querySelectorAll(".js-project-table .table__details")
   );
 
   rows.sort((a, b) => {
     if (columnClass === "contribution") {
-      // Directly access the numeric data-contribution attribute for sorting
       const aValue = Number(
         a.querySelector(`.table__summary__${columnClass}`).dataset.contribution
       );
@@ -48,7 +48,7 @@ export function sortTable(columnClass, asc = true) {
         .querySelector(`.table__summary__${columnClass}`)
         .innerText.trim();
 
-      if (columnClass === "end-date") {
+      if (columnClass === "date") {
         const aDate = new Date(aText);
         const bDate = new Date(bText);
         return asc ? aDate - bDate : bDate - aDate;
