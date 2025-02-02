@@ -1,3 +1,5 @@
+// sorting.js
+
 export function setSorting() {
   const headers = document.querySelectorAll(".js-sort-header");
 

@@ -1,3 +1,5 @@
+// data-fetching.js
+
 export async function loadProjects() {
   try {
     const response = await fetch("projects.json");

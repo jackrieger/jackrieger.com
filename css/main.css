@@ -55,6 +55,10 @@ p {
   width: 100%;
 }
 
+.nav-link.js-expand-toggle {
+  margin-left: 1rem;
+}
+
 .table-row {
   border-bottom: solid 1px;
   display: flex;
@@ -125,12 +129,12 @@ p {
 
   .table__summary__category {
     display: unset;
-    flex-basis: 15%;
+    flex-basis: 17.5%;
   }
 
   .table__summary__role {
     display: unset;
-    flex-basis: 15%;
+    flex-basis: 17.5%;
   }
 
   .table__summary__date {
@@ -140,6 +144,6 @@ p {
 
   .table__summary__contribution {
     display: unset;
-    flex-basis: 10%;
+    flex-basis: 5%;
   }
 }
