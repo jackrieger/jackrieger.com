@@ -1,11 +1,9 @@
-/* main.css */
-
 @charset "UTF-8";
 
 html {
   --black: #000000;
   --blue: #2222ff;
-  --gray: #ededed;
+  --gray: #dddddd;
   --green: #14f578;
   --white: #fdfdfd;
   background-color: var(--white);
@@ -66,13 +64,6 @@ p {
   display: flex;
 }
 
-.table-cell {
-  border-bottom: 1px solid var(--black);
-  flex: 1;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-}
-
 .table-cell--project {
   flex-basis: 100%;
 }
@@ -95,7 +86,27 @@ p {
 
 .table__summary {
   display: flex;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
   width: 100%;
+}
+
+.table__details {
+  border-bottom: 1px solid var(--black);
+  flex: 1;
+
+  &:has(.table__link) {
+    .table__summary {
+      color: var(--blue);
+    }
+
+    &:hover {
+      .table__summary {
+        color: var(--black);
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 .sort-arrow {

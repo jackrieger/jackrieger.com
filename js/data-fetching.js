@@ -34,7 +34,23 @@ function renderProjects(projects) {
           ${getContributionDots(project.contribution)}
         </div>
       </summary>
-      <div class="">Test</div>
+      <div class="table__info">
+        ${
+          project.description
+            ? `<p class="table__description">${project.description}</p>`
+            : ""
+        }
+        ${
+          project.link
+            ? `
+              <p class="table__link">
+                <a href="${project.link}" target="_blank">
+                  ↪ View project
+                </a>
+              </p>`
+            : ""
+        }
+      </div>
     `;
 
     table.appendChild(row);
