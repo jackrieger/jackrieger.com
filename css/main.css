@@ -41,7 +41,7 @@ a {
 
 p {
   margin-bottom: 1rem;
-  max-width: 55ch;
+  max-width: 58ch;
 }
 
 ::selection {
@@ -65,17 +65,21 @@ p {
   border-bottom: 1px solid var(--black);
   flex: 1;
 
-  &:has(.table__link) {
-    .table__summary {
-      color: var(--blue);
-    }
+  .table__summary {
+    color: var(--blue);
+  }
 
-    &:hover {
-      .table__summary {
-        color: var(--black);
-        cursor: pointer;
-      }
+  &:hover {
+    .table__summary {
+      color: var(--black);
+      cursor: pointer;
     }
+  }
+}
+
+.table-category {
+  &:has([data-asc="true"]) {
+    cursor: n-resize;
   }
 }
 
@@ -103,9 +107,9 @@ p {
 }
 
 .sort-arrow {
-  margin-top: -2px;
-  padding-left: 2px;
   font-size: 0.9em;
+  padding-left: 2px;
+  position: absolute;
 }
 
 .update-notice {

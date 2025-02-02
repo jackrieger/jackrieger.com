@@ -1,15 +1,12 @@
 export function setSorting() {
-  const headers = document.querySelectorAll(
-    '.table-heading [class^="table__summary__"]'
-  );
+  const headers = document.querySelectorAll(".js-sort-header");
 
   headers.forEach((header) => {
     header.addEventListener("click", () => {
-      const parts = header.className.split("__");
-      const columnClass = parts[parts.length - 1];
+      const column = header.dataset.column;
       let asc = header.dataset.asc === "true" ? false : true;
 
-      sortTable(columnClass, asc);
+      sortTable(column, asc);
       updateIndicators(headers, header, asc);
       header.dataset.asc = asc;
     });
@@ -17,7 +14,7 @@ export function setSorting() {
 
   // Initial sort by "contribution" in descending order
   const contributionHeader = document.querySelector(
-    ".table__summary__contribution"
+    ".js-sort-header[data-column='contribution']"
   );
   if (contributionHeader) {
     contributionHeader.dataset.asc = false;
@@ -26,29 +23,29 @@ export function setSorting() {
   }
 }
 
-export function sortTable(columnClass, asc = true) {
+export function sortTable(column, asc = true) {
   const rows = Array.from(
     document.querySelectorAll(".js-project-table .table__details")
   );
 
   rows.sort((a, b) => {
-    if (columnClass === "contribution") {
+    if (column === "contribution") {
       const aValue = Number(
-        a.querySelector(`.table__summary__${columnClass}`).dataset.contribution
+        a.querySelector(`.table__summary__${column}`).dataset.contribution
       );
       const bValue = Number(
-        b.querySelector(`.table__summary__${columnClass}`).dataset.contribution
+        b.querySelector(`.table__summary__${column}`).dataset.contribution
       );
       return asc ? aValue - bValue : bValue - aValue;
     } else {
       const aText = a
-        .querySelector(`.table__summary__${columnClass}`)
+        .querySelector(`.table__summary__${column}`)
         .innerText.trim();
       const bText = b
-        .querySelector(`.table__summary__${columnClass}`)
+        .querySelector(`.table__summary__${column}`)
         .innerText.trim();
 
-      if (columnClass === "date") {
+      if (column === "date") {
         const aDate = new Date(aText);
         const bDate = new Date(bText);
         return asc ? aDate - bDate : bDate - aDate;
@@ -64,11 +61,11 @@ export function sortTable(columnClass, asc = true) {
 
 function updateIndicators(headers, activeHeader, asc) {
   headers.forEach((header) => {
-    const arrow = header.querySelector(".sort-arrow");
+    const arrow = header.querySelector(".js-sort-arrow");
     if (arrow) arrow.textContent = "";
   });
 
-  const activeArrow = activeHeader.querySelector(".sort-arrow");
+  const activeArrow = activeHeader.querySelector(".js-sort-arrow");
   if (activeArrow) {
     activeArrow.textContent = asc ? "↑" : "↓";
   }
