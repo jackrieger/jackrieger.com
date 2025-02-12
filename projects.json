@@ -130,6 +130,16 @@
     "description": "As a maintenance engineer for the Columbia Graduate School of Architecture, Planning and Preservation’s website, I have been responsible for implementing improvements, fixing issues, and creating smaller-scale site areas."
   },
   {
+    "project": "Economy CMS",
+    "category": "engineering",
+    "role": "maintenance",
+    "date": "2020",
+    "ongoing": true,
+    "link": "https://ecnmy.com/",
+    "contribution": 1,
+    "description": "Economy is an easy, powerful, and flexible CMS. As an engineer at Linked by Air, I have contributed fixes, updates, and error troubleshooting in this CMS product."
+  },
+  {
     "project": "Yale Architecture Advanced Technology",
     "category": "engineering",
     "role": "developer",
