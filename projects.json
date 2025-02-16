@@ -24,7 +24,8 @@
     "date": "2024",
     "link": "https://www.a4arts.org/",
     "contribution": 3,
-    "description": "A4 is an art center in Cape Town, South Africa that describes itself as a “laboratory” – a place to experiment with new ideas and new modes of working. The website is a network connecting communities, artists, images, exhibitions, publications, ephemera and fragments in ways that only A4 can envision. A4 calls the website “a place to find things and a place to get lost; a platform for structured engagements and incidental encounters.”"
+    "description": "A4 is an art center in Cape Town, South Africa that describes itself as a “laboratory” – a place to experiment with new ideas and new modes of working. The website is a network connecting communities, artists, images, exhibitions, publications, ephemera and fragments in ways that only A4 can envision. A4 calls the website “a place to find things and a place to get lost; a platform for structured engagements and incidental encounters.”",
+    "openOnLoad": true
   },
   {
     "project": "Core 1: Interaction",

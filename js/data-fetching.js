@@ -15,9 +15,13 @@ function renderProjects(projects) {
   const table = document.querySelector(".js-project-table");
   table.innerHTML = "";
 
-  projects.forEach((project) => {
+  projects.forEach((project, index) => {
     const row = document.createElement("details");
     row.classList.add("table__details");
+
+    if (project.openOnLoad) {
+      row.setAttribute("open", "");
+    }
 
     if (project.link) {
       row.href = project.link;

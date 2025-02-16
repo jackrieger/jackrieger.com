@@ -73,6 +73,12 @@ p {
     color: var(--blue);
   }
 
+  &[open] {
+    .table__summary {
+      color: var(--black);
+    }
+  }
+
   &:hover {
     .table__summary {
       color: var(--black);
