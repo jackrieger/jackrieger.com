@@ -2,13 +2,15 @@
 
 export function setSorting() {
   const headers = document.querySelectorAll(".js-sort-header");
+  let isInitialLoad = true;
 
   headers.forEach((header) => {
     header.addEventListener("click", () => {
+      isInitialLoad = false;
       const column = header.dataset.column;
       let asc = header.dataset.asc === "true" ? false : true;
 
-      sortTable(column, asc);
+      sortTable(column, asc, isInitialLoad);
       updateIndicators(headers, header, asc);
       header.dataset.asc = asc;
     });
@@ -20,17 +22,28 @@ export function setSorting() {
   );
   if (contributionHeader) {
     contributionHeader.dataset.asc = false;
-    sortTable("contribution", false);
+    sortTable("contribution", false, isInitialLoad);
     updateIndicators(headers, contributionHeader, false);
   }
 }
 
-export function sortTable(column, asc = true) {
+export function sortTable(column, asc = true, isInitialLoad = false) {
   const rows = Array.from(
     document.querySelectorAll(".js-project-table .table__details")
   );
 
   rows.sort((a, b) => {
+    // Only consider priority on initial load
+    if (isInitialLoad) {
+      const aPriority = a.dataset.priority ? Number(a.dataset.priority) : Infinity;
+      const bPriority = b.dataset.priority ? Number(b.dataset.priority) : Infinity;
+      
+      if (aPriority !== bPriority) {
+        return aPriority - bPriority;
+      }
+    }
+
+    // Then sort by the selected column
     if (column === "contribution") {
       const aValue = Number(
         a.querySelector(`.table__summary__${column}`).dataset.contribution

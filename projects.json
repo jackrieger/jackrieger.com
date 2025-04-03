@@ -1,5 +1,14 @@
 [
   {
+    "project": "Interactive Systems II",
+    "category": "education",
+    "role": "speaker",
+    "date": "2025",
+    "link": "https://s25interaction.net/",
+    "contribution": 1,
+    "description": "This course exposes students to thorough and elaborate system concepts through brand, interaction and and other environments. It is an extensive investigation in brand, systems, interface, interaction, the mechanism, the controls and the aims of interactive works."
+  },
+  {
     "project": "Core 1: Interaction",
     "category": "education",
     "role": "instructor",
@@ -24,6 +33,7 @@
     "date": "2024",
     "link": "https://www.a4arts.org/",
     "contribution": 3,
+    "priority": 1,
     "description": "A4 is an art center in Cape Town, South Africa that describes itself as a “laboratory” – a place to experiment with new ideas and new modes of working. The website is a network connecting communities, artists, images, exhibitions, publications, ephemera and fragments in ways that only A4 can envision. A4 calls the website “a place to find things and a place to get lost; a platform for structured engagements and incidental encounters.”",
     "openOnLoad": true
   },
@@ -59,7 +69,7 @@
     "date": "2023",
     "link": "https://d4bl.org/",
     "contribution": 3,
-    "description": "This website for Data for Black Lives is an interactive database that surfaces the organization’s work across many channels to abolish data weapons and algorithmic racism."
+    "description": "This website for Data for Black Lives is an interactive database that surfaces the organization's work across many channels to abolish data weapons and algorithmic racism."
   },
   {
     "project": "Lockdown University",
@@ -101,7 +111,8 @@
     "date": "2022",
     "link": "https://samfoxschool.wustl.edu/",
     "contribution": 3,
-    "description": "The Sam Fox School of Design & Visual Arts at Washington University in St. Louis is a leader in architecture, art, and design education. Like Sam Fox school, this website’s design and engineering emphasize flexibility, growth, and inclusion. The website seeks to provide a kaleidoscopic view of the many kinds of learning and production that take place here."
+    "priority": 2,
+    "description": "The Sam Fox School of Design & Visual Arts at Washington University in St. Louis is a leader in architecture, art, and design education. Like Sam Fox school, this website's design and engineering emphasize flexibility, growth, and inclusion. The website seeks to provide a kaleidoscopic view of the many kinds of learning and production that take place here."
   },
   {
     "project": "Tufts University Art Galleries",
@@ -110,7 +121,7 @@
     "date": "2022",
     "link": "https://artgalleries.tufts.edu/",
     "contribution": 1,
-    "description": "As a maintenance engineer for Tufts University Art Galleries’ website, I have been responsible for implementing improvements, fixing issues, and creating smaller-scale site areas."
+    "description": "As a maintenance engineer for Tufts University Art Galleries' website, I have been responsible for implementing improvements, fixing issues, and creating smaller-scale site areas."
   },
   {
     "project": "National Academy of Design Annual Exhibition",
@@ -128,7 +139,7 @@
     "date": "2021",
     "link": "https://www.arch.columbia.edu/",
     "contribution": 1,
-    "description": "As a maintenance engineer for the Columbia Graduate School of Architecture, Planning and Preservation’s website, I have been responsible for implementing improvements, fixing issues, and creating smaller-scale site areas."
+    "description": "As a maintenance engineer for the Columbia Graduate School of Architecture, Planning and Preservation's website, I have been responsible for implementing improvements, fixing issues, and creating smaller-scale site areas."
   },
   {
     "project": "Economy CMS",
@@ -156,7 +167,7 @@
     "date": "2020",
     "link": "https://www.theicala.org/en",
     "contribution": 1,
-    "description": "As a maintenance engineer for the Institute of Contemporary Art Los Angeles’ website, I have been responsible for implementing improvements, fixing issues, and creating smaller-scale site areas."
+    "description": "As a maintenance engineer for the Institute of Contemporary Art Los Angeles' website, I have been responsible for implementing improvements, fixing issues, and creating smaller-scale site areas."
   },
   {
     "project": "Museo Jumex",
@@ -165,7 +176,7 @@
     "date": "2020",
     "link": "https://www.fundacionjumex.org/en",
     "contribution": 1,
-    "description": "As a maintenance engineer for Museo Jumex’s website, I have been responsible for implementing improvements, fixing issues, and creating smaller-scale site areas."
+    "description": "As a maintenance engineer for Museo Jumex's website, I have been responsible for implementing improvements, fixing issues, and creating smaller-scale site areas."
   },
   {
     "project": "The European Fine Art Fair",
@@ -174,7 +185,7 @@
     "date": "2019",
     "link": "https://www.linkedbyair.net/projects/126-tefaf-website",
     "contribution": 1,
-    "description": "A website for The European Fine Art Fair, one of the world’s preeminent organizations for fine art, antiques, and design."
+    "description": "A website for The European Fine Art Fair, one of the world's preeminent organizations for fine art, antiques, and design."
   },
   {
     "project": "Deborah Berke Partners",
@@ -183,7 +194,7 @@
     "date": "2019",
     "link": "https://www.linkedbyair.net/projects/90-deborah-berke-partners-website",
     "contribution": 1,
-    "description": "Deborah Berke Partners is an architecture practice in New York which recently brought on eight new partners. The site’s design reflects this growth in its ability to showcase all the different aspects of the firm’s practice and principles."
+    "description": "Deborah Berke Partners is an architecture practice in New York which recently brought on eight new partners. The site's design reflects this growth in its ability to showcase all the different aspects of the firm's practice and principles."
   },
   {
     "project": "The Pedagogy of Design in the Age of Computation",
@@ -191,6 +202,6 @@
     "role": "speaker",
     "date": "2018",
     "contribution": 1,
-    "description": "I was invited to give a talk at a symposium about code and pedagogy in design. Over the last twenty years, design education has had an evolving but uneasy relationship with code. Twenty years later, it’s still an open question how, or whether, the surging number of students studying graphic and communication design should learn to code."
+    "description": "I was invited to give a talk at a symposium about code and pedagogy in design. Over the last twenty years, design education has had an evolving but uneasy relationship with code. Twenty years later, it's still an open question how, or whether, the surging number of students studying graphic and communication design should learn to code."
   }
 ]

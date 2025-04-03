@@ -28,6 +28,10 @@ function renderProjects(projects) {
       row.target = "_blank";
     }
 
+    if (project.priority) {
+      row.dataset.priority = project.priority;
+    }
+
     row.innerHTML = `
       <summary class="table__summary">
         <div class="table__summary__project">${project.project}</div>
