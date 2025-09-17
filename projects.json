@@ -1,12 +1,20 @@
 [
   {
+    "project": "Core 1: Interaction",
+    "category": "education",
+    "role": "instructor",
+    "date": "2025",
+    "link": "https://jackrieger.github.io/core-1-interaction/",
+    "contribution": 3,
+    "description": "Core 1: Interaction is a course designed to introduce students to programming as a creative medium—as a way of making and exploring. The coursework focuses on developing a vocabulary of interaction design principles which can then be applied across a range of platforms."
+  },
+  {
     "project": "Interactive Systems II",
     "category": "education",
     "role": "speaker",
     "date": "2025",
-    "link": "https://s25interaction.net/",
     "contribution": 1,
-    "description": "This course exposes students to thorough and elaborate system concepts through brand, interaction and and other environments. It is an extensive investigation in brand, systems, interface, interaction, the mechanism, the controls and the aims of interactive works."
+    "description": "This course exposes students to thorough and elaborate system concepts through brand, interaction and and other environments. It is an extensive investigation in brand, systems, interface, interaction, the mechanism, the controls and the aims of interactive works. Course taught by Anthony Zukofsky at School of Visual Arts."
   },
   {
     "project": "Core 1: Interaction",
@@ -15,7 +23,7 @@
     "date": "2024",
     "link": "https://jackrieger.github.io/core-1-interaction/",
     "contribution": 2,
-    "description": "Core 1: Interaction is designed to introduce students to programming as a creative medium—as a way of making and exploring. The coursework focuses on developing a vocabulary of interaction design principles which can then be applied across a range of platforms."
+    "description": "Core 1: Interaction is a course designed to introduce students to programming as a creative medium—as a way of making and exploring. The coursework focuses on developing a vocabulary of interaction design principles which can then be applied across a range of platforms."
   },
   {
     "project": "Core 2: Interaction Lab",
