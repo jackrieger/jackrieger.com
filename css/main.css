@@ -140,7 +140,8 @@ p {
   margin-bottom: 0;
 }
 
-.table__description {
+.table__description,
+.table__link {
   max-width: none;
 }
 

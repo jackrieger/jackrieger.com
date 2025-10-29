@@ -55,7 +55,7 @@ function renderProjects(projects) {
             ? `
               <p class="table__link">
                 <a href="${project.link}" target="_blank">
-                  ↪ View project
+                  &gt; View project
                 </a>
               </p>`
             : ""
