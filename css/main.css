@@ -128,6 +128,22 @@ p {
   margin-top: 1.5rem;
 }
 
+.table__info {
+  padding-top: 1rem;
+}
+
+.table__info > * {
+  margin-bottom: 1rem;
+}
+
+.table__info > *:last-child {
+  margin-bottom: 0;
+}
+
+.table__description {
+  max-width: none;
+}
+
 @media (min-width: 900px) {
   .table__summary__project {
     flex-basis: 45%;
