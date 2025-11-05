@@ -145,6 +145,10 @@ p {
   max-width: none;
 }
 
+.table__link {
+  margin-bottom: 8px;
+}
+
 @media (min-width: 900px) {
   .table__summary__project {
     flex-basis: 45%;
