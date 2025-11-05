@@ -145,7 +145,7 @@ p {
   max-width: none;
 }
 
-.table__link {
+.table__info > .table__link {
   margin-bottom: 8px;
 }
 
